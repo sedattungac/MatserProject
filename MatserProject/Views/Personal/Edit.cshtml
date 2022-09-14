@@ -1,0 +1,45 @@
+﻿@model EntityLayer.Concrete.Personal
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h4>Personel Düzenleme Sayfası</h4>
+<hr />
+<div class="row">
+    <div class="col-md-12">
+        <form asp-action="Edit" asp-controller="Personal" enctype="multipart/form-data" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="PersonalId" />
+            <div class="form-group">
+                <label asp-for="FullName" class="control-label">Ad Soyad</label>
+                <input asp-for="FullName" class="form-control" />
+                <span asp-validation-for="FullName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Telephone" class="control-label">Telefon</label>
+                <input type="tel" asp-for="Telephone" class="form-control" />
+                <span asp-validation-for="Telephone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ImageUrl" class="control-label"></label>
+                <input type="file" asp-for="ImageUrl" class="form-control" />
+                <span asp-validation-for="ImageUrl" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DepartmentId" class="control-label">Kategori Seçimi</label>
+                <select asp-for="DepartmentId" class="form-control" asp-items="ViewBag.category"></select>
+            </div>
+            <div class="form-group">
+                <div class="float-left">
+                    <a class="btn btn-outline-secondary" asp-action="Index">Geri Dön</a>
+                </div>
+                <div class="float-right">
+                    <input type="submit" value="Kaydet" class="btn btn-outline-primary" />
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+

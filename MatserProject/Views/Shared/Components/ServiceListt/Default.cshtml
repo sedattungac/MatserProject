@@ -1,0 +1,46 @@
+﻿@using EntityLayer.Concrete
+@model IEnumerable<EntityLayer.Concrete.Service>
+<div class="mkd-row-grid-section-wrapper mkd-parallax-row-holder" data-parallax-bg-image=https://baumeister.qodeinteractive.com/wp-content/uploads/2017/11/h4-parallax-img-1.jpg data-parallax-bg-speed=1>
+    <div class="mkd-row-grid-section">
+
+        <div class="vc_row wpb_row vc_row-fluid vc_custom_1511958564445">
+            @foreach (var item in Model)
+            {
+                <div class="wpb_column vc_column_container vc_col-sm-4 mb-5">
+                    <div class="vc_column-inner">
+                        <div class="wpb_wrapper">
+
+                            <div class="mkd-elements-holder   mkd-three-columns  mkd-responsive-mode-768 ">
+
+                                <div class="mkd-eh-item    mkd-horizontal-alignment-center " data-item-class="mkd-eh-custom-5244" data-1024-1280="0 10%" data-768-1024="0 3%" data-680-768="0 15% 88px" data-680="0 5% 88px">
+                                    <div class="mkd-eh-item-inner">
+                                        <div class="mkd-eh-item-content mkd-eh-custom-5244" style="padding: 0 15%">
+                                            <div class="mkd-iwt clearfix  mkd-iwt-icon-top mkd-iwt-icon-small">
+                                                <div class="mkd-iwt-icon">
+                                                    <a itemprop="url" href="#" target="_self">
+                                                        <span class="mkd-icon-shortcode mkd-normal   mkd-icon-small" data-hover-color="#ffffff" data-color="#fdb913">
+                                                            <i class="mkd-icon-font-awesome @item.Icon mkd-icon-element" style="color: #fdb913;font-size:40px"></i>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                                <div class="mkd-iwt-content" style="padding-top: 30px">
+                                                    <h4 class="mkd-iwt-title" style="color: #ffffff">
+                                                        <a itemprop="url" href="#" target="_self">
+                                                            <span class="mkd-iwt-title-text">@item.Title</span>
+                                                        </a>
+                                                    </h4>
+                                                    <p class="mkd-iwt-text">@item.Description</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+
+    </div>
+</div>

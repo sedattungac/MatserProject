@@ -1,0 +1,96 @@
+﻿@using EntityLayer.Concrete
+@model IEnumerable<EntityLayer.Concrete.Blog>
+@{
+    ViewData["Title"] = "Blog";
+    Layout = "~/Views/Shared/_TemplateLayout.cshtml";
+}
+
+<div class="mkd-content" style="margin-top: -80px">
+    <div class="mkd-content-inner">
+        <div class="mkd-title-holder mkd-standard-with-breadcrumbs-type mkd-preload-background mkd-has-bg-image mkd-bg-parallax" style="height: 595px; background-image: url(/FactoryTemplate/baumeister.qodeinteractive.com/wp-content/uploads/2017/11/blog-post-title-img.jpg);" data-height="515">
+            <div class="mkd-title-image">
+                <img itemprop="image" src="../wp-content/uploads/2017/11/blog-post-title-img.jpg" alt="b" />
+            </div>
+            <div class="mkd-title-wrapper" style="height: 515px;padding-top: 80px">
+                <div class="mkd-title-inner">
+                    <div class="mkd-grid">
+                        <div class="mkd-title-info">
+                            <h1 class="mkd-page-title entry-title">Blog Listesi</h1>
+                        </div>
+                        <div class="mkd-breadcrumbs-info">
+                            <div itemprop="breadcrumb" class="mkd-breadcrumbs "><a itemprop="url" href="/Default/Index">Anasayfa</a><span class="mkd-delimiter">&nbsp; / &nbsp;</span><span class="mkd-current">Blog Listesi</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mkd-container">
+            <div class="mkd-container-inner clearfix">
+                <div class="mkd-grid-row ">
+                    <div class="mkd-page-content-holder mkd-grid-col-12">
+                        <div class="mkd-blog-holder mkd-blog-masonry mkd-blog-pagination-standard mkd-masonry-images-fixed mkd-blog-type-masonry mkd-blog-three-columns mkd-normal-space mkd-blog-masonry-in-grid" data-blog-type=masonry data-next-page=2 data-max-num-pages=2 data-post-number=11 data-excerpt-length=28 data-category=electricity>
+                            <div class="mkd-blog-holder-inner mkd-outer-space">
+                                <div class="mkd-blog-masonry-grid-sizer"></div>
+                                <div class="mkd-blog-masonry-grid-gutter"></div>
+                                <div class="mt-5">
+                                    @foreach (var item in Model)
+                                    {
+                                        <article id="post-1023" class="mkd-post-has-media mkd-item-space post-1023 post type-post status-publish format-standard has-post-thumbnail hentry category-electricity tag-machine tag-tools">
+
+                                            <div class="mkd-post-content">
+                                                <div class="mkd-post-heading">
+                                                    <div class="mkd-post-image">
+                                                        <a itemprop="url" href="/Default/BlogDetail/@item.BlogId" title="10 Different Sizes">
+                                                            <img width="1300" height="765" src="@item.ImageUrl" class="attachment-full size-full wp-post-image" sizes="(max-width: 1300px) 100vw, 1300px" />
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="mkd-post-text">
+                                                    <div class="mkd-post-text-inner">
+                                                        <h4 itemprop="name" class="entry-title mkd-post-title">
+                                                            <a itemprop="url" href="/Default/BlogDetail/@item.BlogId" title="10 Different Sizes">
+                                                                @item.Title
+                                                            </a>
+                                                        </h4> <div class="mkd-post-info-top">
+                                                            <div itemprop="dateCreated" class="mkd-post-info-date entry-date published updated">
+                                                                <a itemprop="url">
+                                                                    @item.CreateDate.ToString("dd MMMM yyyy")
+                                                                </a>
+                                                                <meta itemprop="interactionCount" content="UserComments: 0" />
+                                                            </div> <div class="mkd-post-info-author">
+                                                                <a itemprop="author" class="mkd-post-info-author-link">
+                                                                    @item.BlogCategory.Title
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mkd-post-text-main">
+                                                            <div class="mkd-post-excerpt-holder">
+                                                                <p itemprop="description" class="mkd-post-excerpt">
+                                                                    @item.Description.Substring(0, item.Description.Substring(0, 200).LastIndexOf(" "))...
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mkd-post-info-bottom clearfix">
+                                                            <div class="mkd-post-info-bottom-left">
+                                                                <div class="mkd-post-read-more-button">
+                                                                    <a itemprop="url" href="/Default/BlogDetail/@item.BlogId" target="_self" class="mkd-btn mkd-btn-medium mkd-btn-simple mkd-btn-icon mkd-blog-list-button"> <span class="mkd-btn-text">Daha fazla</span> <span class="mkd-btn-icon"><i class="mkd-icon-font-awesome fa fa-long-arrow-right "></i></span></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                        </article>
+                                    }
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

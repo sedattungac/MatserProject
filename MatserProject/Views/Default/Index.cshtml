@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_TemplateLayout.cshtml";
+}
+
+<div class="mkd-content" style="margin-top: -160px">
+    <div class="mkd-content-inner">
+
+
+        @await Component.InvokeAsync("SliderList")
+
+        <div class="mkd-full-width">
+            <div class="mkd-full-width-inner">
+                <div class="mkd-grid-row">
+                    <div class="mkd-page-content-holder mkd-grid-col-12">
+                        @await Component.InvokeAsync("ServiceList")
+                        @await Html.PartialAsync("/Views/Default/ProductPartial.cshtml")
+                        @await Component.InvokeAsync("ServiceListt")
+                        @await Html.PartialAsync("/Views/Default/BlogPartial.cshtml")
+                        @await Component.InvokeAsync("ReferenceList")
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

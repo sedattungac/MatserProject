@@ -1,0 +1,379 @@
+HTTrack3.49-2+htsswf+htsjava launched on Thu, 01 Sep 2022 20:22:33 at https://baumeister.qodeinteractive.com/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "tr, en, *" https://baumeister.qodeinteractive.com/ -O1 "C:\Benim Web Sitem\FactoryTemplate" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+20:26:13	Error: 	"Not Found" (404) at link https://baumeister.qodeinteractive.com/xmlrpc.php?rsd (from https://baumeister.qodeinteractive.com/)
+20:26:13	Warning: 	Link https://baumeister.qodeinteractive.com/cdn-cgi/l/email-protection not scanned (follow robots meta tag)
+20:34:49	Warning: 	Found for https://baumeister.qodeinteractive.com/checkout/
+20:34:49	Warning: 	File has moved from https://baumeister.qodeinteractive.com/checkout/ to https://baumeister.qodeinteractive.com/cart/
+20:37:19	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=840
+20:37:19	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=840 to https://baumeister.qodeinteractive.com/energy-home/
+20:37:22	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=646
+20:37:22	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=646 to https://baumeister.qodeinteractive.com/contractor-home/
+20:37:22	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=555
+20:37:22	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=555 to https://baumeister.qodeinteractive.com/builder-home/
+20:37:22	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=969
+20:37:22	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=969 to https://baumeister.qodeinteractive.com/tool-shop-home/
+20:39:54	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=716
+20:39:54	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=716 to https://baumeister.qodeinteractive.com/steelwork-home/
+20:40:40	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=2117
+20:40:40	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=2117 to https://baumeister.qodeinteractive.com/product-showcase/
+20:40:40	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=938
+20:40:40	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=938 to https://baumeister.qodeinteractive.com/sawmill-home/
+20:41:06	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=821
+20:41:06	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=821 to https://baumeister.qodeinteractive.com/transport-home/
+20:41:06	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=3054
+20:41:06	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=3054 to https://baumeister.qodeinteractive.com/landing/
+20:41:06	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=521
+20:41:06	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=521 to https://baumeister.qodeinteractive.com/about-us/
+20:41:06	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=72
+20:41:06	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=72 to https://baumeister.qodeinteractive.com/our-team/
+20:41:15	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=5
+20:41:15	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=5 to https://baumeister.qodeinteractive.com/meet-the-crew/
+20:41:15	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=184
+20:41:15	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=184 to https://baumeister.qodeinteractive.com/our-services/
+20:41:15	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=173
+20:41:15	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=173 to https://baumeister.qodeinteractive.com/pricing-plans/
+20:41:15	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=90
+20:41:15	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=90 to https://baumeister.qodeinteractive.com/our-clients/
+20:41:15	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=51
+20:41:15	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=51 to https://baumeister.qodeinteractive.com/contact-us/
+20:41:15	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=113
+20:41:15	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=113 to https://baumeister.qodeinteractive.com/faq-page/
+20:41:15	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=403
+20:41:15	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=403 to https://baumeister.qodeinteractive.com/coming-soon/
+20:41:15	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=2093
+20:41:15	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=2093 to https://baumeister.qodeinteractive.com/portfolio/standard-in-grid/
+20:42:50	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=2260
+20:42:50	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=2260 to https://baumeister.qodeinteractive.com/portfolio/standard-wide/
+20:42:50	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=2286
+20:42:50	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=2286 to https://baumeister.qodeinteractive.com/portfolio/gallery-in-grid/
+20:42:50	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=2351
+20:42:50	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=2351 to https://baumeister.qodeinteractive.com/portfolio/gallery-joined-in-grid/
+20:42:50	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=2298
+20:42:50	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=2298 to https://baumeister.qodeinteractive.com/portfolio/gallery-wide/
+20:42:50	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=2346
+20:42:50	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=2346 to https://baumeister.qodeinteractive.com/portfolio/gallery-joined-wide/
+20:42:50	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=2374
+20:42:50	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=2374 to https://baumeister.qodeinteractive.com/portfolio/masonry-in-grid/
+20:43:02	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=2795
+20:43:02	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=2795 to https://baumeister.qodeinteractive.com/portfolio/masonry-joined-in-grid/
+20:43:02	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=2385
+20:43:02	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=2385 to https://baumeister.qodeinteractive.com/portfolio/masonry-wide/
+20:43:02	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=2799
+20:43:02	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=2799 to https://baumeister.qodeinteractive.com/portfolio/masonry-joined-wide/
+20:43:02	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=2323
+20:43:02	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=2323 to https://baumeister.qodeinteractive.com/portfolio/three-columns/
+20:43:02	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=2325
+20:43:02	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=2325 to https://baumeister.qodeinteractive.com/portfolio/three-columns-wide/
+20:43:02	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=2327
+20:43:02	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=2327 to https://baumeister.qodeinteractive.com/portfolio/four-columns/
+20:43:02	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=2329
+20:43:02	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=2329 to https://baumeister.qodeinteractive.com/portfolio/four-columns-wide/
+20:43:02	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=2339
+20:43:02	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=2339 to https://baumeister.qodeinteractive.com/portfolio/five-columns-wide/
+20:43:29	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=1283
+20:43:29	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=1283 to https://baumeister.qodeinteractive.com/portfolio-item/innovative-project/
+20:43:31	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=1719
+20:43:31	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=1719 to https://baumeister.qodeinteractive.com/portfolio-item/construction-sites/
+20:43:33	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=1296
+20:43:33	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=1296 to https://baumeister.qodeinteractive.com/portfolio-item/new-structures/
+20:43:33	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=1721
+20:43:33	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=1721 to https://baumeister.qodeinteractive.com/portfolio-item/heavy-equipment/
+20:43:33	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=1724
+20:43:33	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=1724 to https://baumeister.qodeinteractive.com/portfolio-item/frame-construction/
+20:43:33	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=1725
+20:43:33	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=1725 to https://baumeister.qodeinteractive.com/portfolio-item/wood-flooring/
+20:43:33	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=2570
+20:43:33	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=2570 to https://baumeister.qodeinteractive.com/masonry-list/
+20:43:52	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=1221
+20:43:52	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=1221 to https://baumeister.qodeinteractive.com/standard-list/
+20:44:10	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=3135
+20:44:10	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=3135 to https://baumeister.qodeinteractive.com/left-sidebar/
+20:44:11	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=3133
+20:44:11	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=3133 to https://baumeister.qodeinteractive.com/no-sidebar/
+20:44:17	Error: 	"Not Found" (404) at link https://baumeister.qodeinteractive.com/xmlrpc.php (from https://baumeister.qodeinteractive.com/10-different-sizes/)
+20:44:17	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=1023
+20:44:17	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=1023 to https://baumeister.qodeinteractive.com/10-different-sizes/
+20:44:44	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=1243
+20:44:44	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=1243 to https://baumeister.qodeinteractive.com/expensive-buildings-projects/
+20:45:10	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=1233
+20:45:10	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=1233 to https://baumeister.qodeinteractive.com/buildings-under-construction/
+20:45:17	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=1226
+20:45:17	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=1226 to https://baumeister.qodeinteractive.com/industry/
+20:45:26	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=1251
+20:45:26	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=1251 to https://baumeister.qodeinteractive.com/details-roof-structure/
+20:45:29	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=1263
+20:45:29	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=1263 to https://baumeister.qodeinteractive.com/simplified-building/
+20:47:11	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=253
+20:47:11	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=253 to https://baumeister.qodeinteractive.com/product/electric-drill/
+20:47:55	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=1175
+20:47:55	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=1175 to https://baumeister.qodeinteractive.com/product-list/three-columns/
+20:48:16	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=1183
+20:48:16	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=1183 to https://baumeister.qodeinteractive.com/product-list/four-columns/
+20:48:33	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=1185
+20:48:33	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=1185 to https://baumeister.qodeinteractive.com/product-list/full-width/
+20:48:49	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=1200
+20:48:49	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=1200 to https://baumeister.qodeinteractive.com/my-account/
+20:48:51	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=1202
+20:48:51	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=1202 to https://baumeister.qodeinteractive.com/cart/
+20:48:51	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=1294
+20:48:51	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=1294 to https://baumeister.qodeinteractive.com/elements/accordions/
+20:48:51	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=1324
+20:48:51	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=1324 to https://baumeister.qodeinteractive.com/elements/tabs/
+20:48:51	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=1303
+20:48:51	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=1303 to https://baumeister.qodeinteractive.com/elements/buttons/
+20:48:51	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=1353
+20:48:51	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=1353 to https://baumeister.qodeinteractive.com/elements/icon-with-text/
+20:48:51	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=1451
+20:48:51	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=1451 to https://baumeister.qodeinteractive.com/elements/contact-form/
+20:48:51	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=2095
+20:48:51	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=2095 to https://baumeister.qodeinteractive.com/elements/call-to-action/
+20:48:51	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=1858
+20:48:51	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=1858 to https://baumeister.qodeinteractive.com/elements/blog-list/
+20:48:51	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=1697
+20:48:51	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=1697 to https://baumeister.qodeinteractive.com/elements/image-with-text-slider/
+20:48:51	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=1688
+20:48:51	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=1688 to https://baumeister.qodeinteractive.com/elements/interactive-box/
+20:48:51	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=1706
+20:48:51	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=1706 to https://baumeister.qodeinteractive.com/elements/team/
+20:48:51	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=1459
+20:48:51	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=1459 to https://baumeister.qodeinteractive.com/elements/testimonials/
+20:48:51	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=2216
+20:48:51	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=2216 to https://baumeister.qodeinteractive.com/elements/product-list/
+20:50:07	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=2311
+20:50:07	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=2311 to https://baumeister.qodeinteractive.com/elements/portfolio-list/
+20:50:07	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=1626
+20:50:07	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=1626 to https://baumeister.qodeinteractive.com/elements/carousel/
+20:50:07	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=1485
+20:50:07	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=1485 to https://baumeister.qodeinteractive.com/elements/pricing-table/
+20:50:07	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=1501
+20:50:07	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=1501 to https://baumeister.qodeinteractive.com/elements/progress-bar/
+20:50:07	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=1573
+20:50:07	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=1573 to https://baumeister.qodeinteractive.com/elements/pie-charts/
+20:50:07	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=1540
+20:50:07	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=1540 to https://baumeister.qodeinteractive.com/elements/counters/
+20:50:07	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=1646
+20:50:07	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=1646 to https://baumeister.qodeinteractive.com/elements/countdown/
+20:50:07	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=1605
+20:50:07	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=1605 to https://baumeister.qodeinteractive.com/elements/process-item/
+20:50:07	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=1436
+20:50:07	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=1436 to https://baumeister.qodeinteractive.com/elements/google-maps/
+20:50:07	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=2030
+20:50:07	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=2030 to https://baumeister.qodeinteractive.com/elements/headings/
+20:50:07	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=2080
+20:50:07	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=2080 to https://baumeister.qodeinteractive.com/elements/highlights/
+20:50:07	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=1663
+20:50:07	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=1663 to https://baumeister.qodeinteractive.com/elements/columns/
+20:50:07	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=1671
+20:50:07	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=1671 to https://baumeister.qodeinteractive.com/elements/dropcaps/
+20:50:07	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=2111
+20:50:07	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=2111 to https://baumeister.qodeinteractive.com/elements/section-title/
+20:50:07	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=1792
+20:50:07	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=1792 to https://baumeister.qodeinteractive.com/elements/custom-font/
+20:50:07	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=1718
+20:50:07	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=1718 to https://baumeister.qodeinteractive.com/elements/icon-list-item/
+20:50:07	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=1273
+20:50:07	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=1273 to https://baumeister.qodeinteractive.com/wood-under-construction/
+20:50:12	Error: 	"Not Found" (404) at link https://baumeister.qodeinteractive.com/wp-json/wp/v2/users/2 (from https://baumeister.qodeinteractive.com/author/bryan_mills/)
+20:50:21	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=1270
+20:50:21	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=1270 to https://baumeister.qodeinteractive.com/construction-technique/
+20:50:26	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=1267
+20:50:26	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=1267 to https://baumeister.qodeinteractive.com/using-cinder-blocks/
+20:50:27	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=2518
+20:50:27	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=2518 to https://baumeister.qodeinteractive.com/roads-photography/
+20:50:31	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=2521
+20:50:31	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=2521 to https://baumeister.qodeinteractive.com/road-trip-attractions/
+20:50:34	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=2524
+20:50:34	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=2524 to https://baumeister.qodeinteractive.com/construction-lesson/
+20:50:37	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=2527
+20:50:37	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=2527 to https://baumeister.qodeinteractive.com/road-reconstruction/
+20:50:41	Warning: 	File not parsed, looks like binary: https://baumeister.qodeinteractive.com/wp-content/plugins/revslider/public/assets/css/openhand.cur
+20:50:41	Warning: 	File not parsed, looks like binary: https://baumeister.qodeinteractive.com/wp-content/plugins/revslider/public/assets/css/closedhand.cur
+20:51:02	Warning: 	Found for https://baumeister.qodeinteractive.com/cart/?remove_item=cfa0860e83a4c3a763a7e62d825349f7&_wpnonce=258719e85f
+20:51:02	Warning: 	File has moved from https://baumeister.qodeinteractive.com/cart/?remove_item=cfa0860e83a4c3a763a7e62d825349f7&_wpnonce=258719e85f to http://baumeister.qodeinteractive.com/tool-shop-home/?removed_item=1
+20:51:02	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=259
+20:51:02	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=259 to https://baumeister.qodeinteractive.com/product/electrical-wires/
+20:51:50	Warning: 	Found for https://baumeister.qodeinteractive.com/cart/?remove_item=9c3b1830513cc3b8fc4b76635d32e692&_wpnonce=258719e85f
+20:51:50	Warning: 	File has moved from https://baumeister.qodeinteractive.com/cart/?remove_item=9c3b1830513cc3b8fc4b76635d32e692&_wpnonce=258719e85f to http://baumeister.qodeinteractive.com/tool-shop-home/?removed_item=1
+20:51:50	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=1113
+20:51:50	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=1113 to https://baumeister.qodeinteractive.com/product/power-saw/
+20:52:31	Warning: 	Found for https://baumeister.qodeinteractive.com/cart/?remove_item=d6ef5f7fa914c19931a55bb262ec879c&_wpnonce=258719e85f
+20:52:31	Warning: 	File has moved from https://baumeister.qodeinteractive.com/cart/?remove_item=d6ef5f7fa914c19931a55bb262ec879c&_wpnonce=258719e85f to http://baumeister.qodeinteractive.com/tool-shop-home/?removed_item=1
+20:52:31	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=1114
+20:52:31	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=1114 to https://baumeister.qodeinteractive.com/product/digital-multimeter/
+20:53:08	Warning: 	Found for https://baumeister.qodeinteractive.com/cart/?remove_item=e19347e1c3ca0c0b97de5fb3b690855a&_wpnonce=258719e85f
+20:53:08	Warning: 	File has moved from https://baumeister.qodeinteractive.com/cart/?remove_item=e19347e1c3ca0c0b97de5fb3b690855a&_wpnonce=258719e85f to http://baumeister.qodeinteractive.com/tool-shop-home/?removed_item=1
+20:53:08	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=1115
+20:53:08	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=1115 to https://baumeister.qodeinteractive.com/product/cargo-crane/
+20:53:29	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=1119
+20:53:29	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=1119 to https://baumeister.qodeinteractive.com/product/safety-helmet/
+20:54:05	Warning: 	Found for https://baumeister.qodeinteractive.com/cart/?remove_item=c6036a69be21cb660499b75718a3ef24&_wpnonce=258719e85f
+20:54:05	Warning: 	File has moved from https://baumeister.qodeinteractive.com/cart/?remove_item=c6036a69be21cb660499b75718a3ef24&_wpnonce=258719e85f to http://baumeister.qodeinteractive.com/tool-shop-home/?removed_item=1
+20:54:05	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=1120
+20:54:05	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=1120 to https://baumeister.qodeinteractive.com/product/duct-tape/
+20:54:21	Warning: 	Found for https://baumeister.qodeinteractive.com/cart/?remove_item=3a15c7d0bbe60300a39f76f8a5ba6896&_wpnonce=258719e85f
+20:54:21	Warning: 	File has moved from https://baumeister.qodeinteractive.com/cart/?remove_item=3a15c7d0bbe60300a39f76f8a5ba6896&_wpnonce=258719e85f to http://baumeister.qodeinteractive.com/tool-shop-home/?removed_item=1
+20:54:38	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=1121
+20:54:38	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=1121 to https://baumeister.qodeinteractive.com/product/screwdriver-pallet/
+20:55:04	Warning: 	Found for https://baumeister.qodeinteractive.com/cart/?remove_item=3b712de48137572f3849aabd5666a4e3&_wpnonce=258719e85f
+20:55:04	Warning: 	File has moved from https://baumeister.qodeinteractive.com/cart/?remove_item=3b712de48137572f3849aabd5666a4e3&_wpnonce=258719e85f to http://baumeister.qodeinteractive.com/tool-shop-home/?removed_item=1
+20:55:23	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=1122
+20:55:23	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=1122 to https://baumeister.qodeinteractive.com/product/chain-saw/
+20:55:41	Warning: 	Found for https://baumeister.qodeinteractive.com/cart/?remove_item=c7635bfd99248a2cdef8249ef7bfbef4&_wpnonce=258719e85f
+20:55:41	Warning: 	File has moved from https://baumeister.qodeinteractive.com/cart/?remove_item=c7635bfd99248a2cdef8249ef7bfbef4&_wpnonce=258719e85f to http://baumeister.qodeinteractive.com/tool-shop-home/?removed_item=1
+20:55:41	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=1124
+20:55:41	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=1124 to https://baumeister.qodeinteractive.com/product/concrete-mixer/
+20:56:03	Warning: 	Found for https://baumeister.qodeinteractive.com/cart/?remove_item=c21002f464c5fc5bee3b98ced83963b8&_wpnonce=258719e85f
+20:56:03	Warning: 	File has moved from https://baumeister.qodeinteractive.com/cart/?remove_item=c21002f464c5fc5bee3b98ced83963b8&_wpnonce=258719e85f to http://baumeister.qodeinteractive.com/tool-shop-home/?removed_item=1
+20:56:09	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=1125
+20:56:09	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=1125 to https://baumeister.qodeinteractive.com/product/hammer/
+20:56:30	Warning: 	Found for https://baumeister.qodeinteractive.com/cart/?remove_item=678a1491514b7f1006d605e9161946b1&_wpnonce=258719e85f
+20:56:30	Warning: 	File has moved from https://baumeister.qodeinteractive.com/cart/?remove_item=678a1491514b7f1006d605e9161946b1&_wpnonce=258719e85f to http://baumeister.qodeinteractive.com/tool-shop-home/?removed_item=1
+20:56:30	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=1127
+20:56:30	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=1127 to https://baumeister.qodeinteractive.com/product/safety-gloves/
+20:57:01	Warning: 	Found for https://baumeister.qodeinteractive.com/cart/?remove_item=3fe78a8acf5fda99de95303940a2420c&_wpnonce=258719e85f
+20:57:01	Warning: 	File has moved from https://baumeister.qodeinteractive.com/cart/?remove_item=3fe78a8acf5fda99de95303940a2420c&_wpnonce=258719e85f to http://baumeister.qodeinteractive.com/tool-shop-home/?removed_item=1
+20:57:01	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=1128
+20:57:01	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=1128 to https://baumeister.qodeinteractive.com/product/grinder/
+20:57:35	Warning: 	Found for https://baumeister.qodeinteractive.com/cart/?remove_item=a1d50185e7426cbb0acad1e6ca74b9aa&_wpnonce=258719e85f
+20:57:35	Warning: 	File has moved from https://baumeister.qodeinteractive.com/cart/?remove_item=a1d50185e7426cbb0acad1e6ca74b9aa&_wpnonce=258719e85f to http://baumeister.qodeinteractive.com/tool-shop-home/?removed_item=1
+20:57:35	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=1147
+20:57:35	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=1147 to https://baumeister.qodeinteractive.com/product/advanced-tool/
+20:58:08	Warning: 	Found for https://baumeister.qodeinteractive.com/cart/?remove_item=f197002b9a0853eca5e046d9ca4663d5&_wpnonce=258719e85f
+20:58:08	Warning: 	File has moved from https://baumeister.qodeinteractive.com/cart/?remove_item=f197002b9a0853eca5e046d9ca4663d5&_wpnonce=258719e85f to http://baumeister.qodeinteractive.com/tool-shop-home/?removed_item=1
+20:58:19	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=1151
+20:58:19	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=1151 to https://baumeister.qodeinteractive.com/product/storage-box/
+20:59:05	Warning: 	Found for https://baumeister.qodeinteractive.com/cart/?remove_item=a8240cb8235e9c493a0c30607586166c&_wpnonce=258719e85f
+20:59:05	Warning: 	File has moved from https://baumeister.qodeinteractive.com/cart/?remove_item=a8240cb8235e9c493a0c30607586166c&_wpnonce=258719e85f to http://baumeister.qodeinteractive.com/tool-shop-home/?removed_item=1
+20:59:05	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=1157
+20:59:05	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=1157 to https://baumeister.qodeinteractive.com/product/diesel-generator/
+20:59:23	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=2197
+20:59:23	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=2197 to https://baumeister.qodeinteractive.com/portfolio-item/smelting-process/
+20:59:46	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=2190
+20:59:46	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=2190 to https://baumeister.qodeinteractive.com/portfolio-item/welding-fence/
+20:59:46	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=2201
+20:59:46	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=2201 to https://baumeister.qodeinteractive.com/portfolio-item/steel-industry/
+20:59:48	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=2204
+20:59:48	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=2204 to https://baumeister.qodeinteractive.com/portfolio-item/concrete-column/
+20:59:48	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=2208
+20:59:48	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=2208 to https://baumeister.qodeinteractive.com/portfolio-item/railway-tracks/
+20:59:48	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=2150
+20:59:48	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=2150 to https://baumeister.qodeinteractive.com/team-member/jason-rice/
+20:59:48	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=2177
+20:59:48	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=2177 to https://baumeister.qodeinteractive.com/team-member/russell-ford/
+20:59:48	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=2179
+20:59:48	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=2179 to https://baumeister.qodeinteractive.com/team-member/samuel-day/
+20:59:48	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=2185
+20:59:48	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=2185 to https://baumeister.qodeinteractive.com/team-member/edward-palmer/
+20:59:48	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=2186
+20:59:48	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=2186 to https://baumeister.qodeinteractive.com/team-member/henry-carroll/
+20:59:48	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=2187
+20:59:48	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=2187 to https://baumeister.qodeinteractive.com/team-member/diana-mason/
+20:59:48	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=2188
+20:59:48	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=2188 to https://baumeister.qodeinteractive.com/team-member/dennis-gilbert/
+20:59:48	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=2189
+20:59:48	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=2189 to https://baumeister.qodeinteractive.com/team-member/brandon-reyes/
+20:59:48	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=2224
+20:59:48	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=2224 to https://baumeister.qodeinteractive.com/portfolio-item/import/
+20:59:48	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=2233
+20:59:48	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=2233 to https://baumeister.qodeinteractive.com/portfolio-item/lumber/
+20:59:48	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=2238
+20:59:48	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=2238 to https://baumeister.qodeinteractive.com/portfolio-item/supply/
+20:59:48	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=2241
+20:59:48	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=2241 to https://baumeister.qodeinteractive.com/portfolio-item/the-forest/
+20:59:48	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=2654
+20:59:48	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=2654 to https://baumeister.qodeinteractive.com/portfolio-item/the-roof/
+20:59:48	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=2659
+20:59:48	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=2659 to https://baumeister.qodeinteractive.com/portfolio-item/woodworks/
+20:59:48	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=2660
+20:59:48	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=2660 to https://baumeister.qodeinteractive.com/portfolio-item/the-pulp/
+20:59:48	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=2661
+20:59:48	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=2661 to https://baumeister.qodeinteractive.com/portfolio-item/prepworks/
+20:59:48	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=2251
+20:59:48	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=2251 to https://baumeister.qodeinteractive.com/team-member/howard-boyd/
+20:59:48	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=2257
+20:59:48	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=2257 to https://baumeister.qodeinteractive.com/team-member/rachel-lynch/
+20:59:48	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=2258
+20:59:48	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=2258 to https://baumeister.qodeinteractive.com/team-member/steven-wong/
+20:59:48	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=2259
+20:59:48	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=2259 to https://baumeister.qodeinteractive.com/team-member/thomas-morris/
+20:59:48	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=2317
+20:59:48	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=2317 to https://baumeister.qodeinteractive.com/portfolio/
+20:59:48	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=1744
+20:59:48	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=1744 to https://baumeister.qodeinteractive.com/portfolio-item/building-systems/
+20:59:48	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=2090
+20:59:48	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=2090 to https://baumeister.qodeinteractive.com/portfolio-item/lets-work-together/
+20:59:48	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=2107
+20:59:48	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=2107 to https://baumeister.qodeinteractive.com/portfolio-item/make-every-work-count/
+20:59:48	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=2115
+20:59:48	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=2115 to https://baumeister.qodeinteractive.com/portfolio-item/building-smart/
+20:59:48	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=2148
+20:59:48	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=2148 to https://baumeister.qodeinteractive.com/portfolio-item/construction-safety/
+20:59:48	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=2151
+20:59:48	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=2151 to https://baumeister.qodeinteractive.com/portfolio-item/building-fast/
+20:59:48	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=2167
+20:59:48	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=2167 to https://baumeister.qodeinteractive.com/portfolio-item/we-can-do-anything/
+20:59:48	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=2176
+20:59:48	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=2176 to https://baumeister.qodeinteractive.com/portfolio-item/better-faster-taller/
+20:59:48	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=2181
+20:59:48	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=2181 to https://baumeister.qodeinteractive.com/portfolio-item/we-can-do-all/
+20:59:48	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=1218
+20:59:48	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=1218 to https://baumeister.qodeinteractive.com/soft-wood-examples/
+20:59:52	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=1229
+20:59:52	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=1229 to https://baumeister.qodeinteractive.com/laminate-flooring-ideas/
+20:59:54	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=1239
+20:59:54	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=1239 to https://baumeister.qodeinteractive.com/gallery-of-scaffolding/
+20:59:56	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=1259
+20:59:56	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=1259 to https://baumeister.qodeinteractive.com/construction-workers-building/
+20:59:59	Warning: 	Retry after error -4 (Connect Error) at link baumeister.qodeinteractive.com/?wordfence_lh=1&hid=09C1EAC2D2F8904EB2E40A7887D10ED9 (from https://baumeister.qodeinteractive.com/left-sidebar/page/3/)
+20:59:59	Warning: 	Found for https://baumeister.qodeinteractive.com/cart/?remove_item=c24cd76e1ce41366a4bbe8a49b02a028&_wpnonce=258719e85f
+20:59:59	Warning: 	File has moved from https://baumeister.qodeinteractive.com/cart/?remove_item=c24cd76e1ce41366a4bbe8a49b02a028&_wpnonce=258719e85f to http://baumeister.qodeinteractive.com/product-list/?removed_item=1
+21:00:10	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/product-list/page/1/
+21:00:10	Warning: 	File has moved from https://baumeister.qodeinteractive.com/product-list/page/1/ to https://baumeister.qodeinteractive.com/product-list/
+21:01:42	Warning: 	Retry after error -4 (Connect Error) at link baumeister.qodeinteractive.com/?wordfence_lh=1&hid=EF069C9E60D0D4CD6B1068BBB69433DC (from https://baumeister.qodeinteractive.com/elements/product-list/?add-to-cart=253)
+21:01:43	Warning: 	Retry after error -4 (Connect Error) at link baumeister.qodeinteractive.com/?wordfence_lh=1&hid=5D23BD7B1458ABF327C47F4D6BFFB326 (from https://baumeister.qodeinteractive.com/elements/product-list/?add-to-cart=259)
+21:01:43	Warning: 	Retry after error -4 (Connect Error) at link baumeister.qodeinteractive.com/?wordfence_lh=1&hid=0109442F0BD2E266D9CC7E1BE05FBA49 (from https://baumeister.qodeinteractive.com/elements/product-list/?add-to-cart=1113)
+21:01:45	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=2533
+21:01:45	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=2533 to https://baumeister.qodeinteractive.com/control-of-the-roads/
+21:01:49	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/?p=2530
+21:01:49	Warning: 	File has moved from https://baumeister.qodeinteractive.com/?p=2530 to https://baumeister.qodeinteractive.com/quality-material/
+21:02:11	Warning: 	Moved Permanently for https://baumeister.qodeinteractive.com/product-category/power-tools/page/1/
+21:02:11	Warning: 	File has moved from https://baumeister.qodeinteractive.com/product-category/power-tools/page/1/ to https://baumeister.qodeinteractive.com/product-category/power-tools/
+21:02:11	Warning: 	Found for https://baumeister.qodeinteractive.com/cart/?undo_item=cfa0860e83a4c3a763a7e62d825349f7&_wpnonce=258719e85f
+21:02:11	Warning: 	File has moved from https://baumeister.qodeinteractive.com/cart/?undo_item=cfa0860e83a4c3a763a7e62d825349f7&_wpnonce=258719e85f to http://baumeister.qodeinteractive.com/product/electrical-wires/?add-to-cart=1124
+21:02:37	Warning: 	Found for https://baumeister.qodeinteractive.com/cart/?undo_item=9c3b1830513cc3b8fc4b76635d32e692&_wpnonce=258719e85f
+21:02:37	Warning: 	File has moved from https://baumeister.qodeinteractive.com/cart/?undo_item=9c3b1830513cc3b8fc4b76635d32e692&_wpnonce=258719e85f to http://baumeister.qodeinteractive.com/product/power-saw/?add-to-cart=1127
+21:02:50	Warning: 	Found for https://baumeister.qodeinteractive.com/cart/?undo_item=d6ef5f7fa914c19931a55bb262ec879c&_wpnonce=258719e85f
+21:02:50	Warning: 	File has moved from https://baumeister.qodeinteractive.com/cart/?undo_item=d6ef5f7fa914c19931a55bb262ec879c&_wpnonce=258719e85f to http://baumeister.qodeinteractive.com/product/digital-multimeter/?add-to-cart=1122
+21:03:00	Warning: 	Found for https://baumeister.qodeinteractive.com/cart/?undo_item=e19347e1c3ca0c0b97de5fb3b690855a&_wpnonce=258719e85f
+21:03:00	Warning: 	File has moved from https://baumeister.qodeinteractive.com/cart/?undo_item=e19347e1c3ca0c0b97de5fb3b690855a&_wpnonce=258719e85f to http://baumeister.qodeinteractive.com/product/cargo-crane/?add-to-cart=259
+21:03:43	Warning: 	Found for https://baumeister.qodeinteractive.com/cart/?undo_item=c6036a69be21cb660499b75718a3ef24&_wpnonce=258719e85f
+21:03:43	Warning: 	File has moved from https://baumeister.qodeinteractive.com/cart/?undo_item=c6036a69be21cb660499b75718a3ef24&_wpnonce=258719e85f to http://baumeister.qodeinteractive.com/product/duct-tape/?add-to-cart=1115
+21:04:00	Warning: 	Found for https://baumeister.qodeinteractive.com/cart/?undo_item=3a15c7d0bbe60300a39f76f8a5ba6896&_wpnonce=258719e85f
+21:04:00	Warning: 	File has moved from https://baumeister.qodeinteractive.com/cart/?undo_item=3a15c7d0bbe60300a39f76f8a5ba6896&_wpnonce=258719e85f to http://baumeister.qodeinteractive.com/product/screwdriver-pallet/?add-to-cart=259
+21:04:22	Warning: 	Found for https://baumeister.qodeinteractive.com/cart/?undo_item=3b712de48137572f3849aabd5666a4e3&_wpnonce=258719e85f
+21:04:22	Warning: 	File has moved from https://baumeister.qodeinteractive.com/cart/?undo_item=3b712de48137572f3849aabd5666a4e3&_wpnonce=258719e85f to http://baumeister.qodeinteractive.com/product/chain-saw/?add-to-cart=1113
+21:04:44	Warning: 	Found for https://baumeister.qodeinteractive.com/cart/?undo_item=c7635bfd99248a2cdef8249ef7bfbef4&_wpnonce=258719e85f
+21:04:44	Warning: 	File has moved from https://baumeister.qodeinteractive.com/cart/?undo_item=c7635bfd99248a2cdef8249ef7bfbef4&_wpnonce=258719e85f to http://baumeister.qodeinteractive.com/product/concrete-mixer/?add-to-cart=1114
+21:04:56	Warning: 	Found for https://baumeister.qodeinteractive.com/cart/?undo_item=c21002f464c5fc5bee3b98ced83963b8&_wpnonce=258719e85f
+21:04:56	Warning: 	File has moved from https://baumeister.qodeinteractive.com/cart/?undo_item=c21002f464c5fc5bee3b98ced83963b8&_wpnonce=258719e85f to http://baumeister.qodeinteractive.com/product/hammer/?add-to-cart=259
+21:05:13	Warning: 	Found for https://baumeister.qodeinteractive.com/cart/?undo_item=678a1491514b7f1006d605e9161946b1&_wpnonce=258719e85f
+21:05:13	Warning: 	File has moved from https://baumeister.qodeinteractive.com/cart/?undo_item=678a1491514b7f1006d605e9161946b1&_wpnonce=258719e85f to http://baumeister.qodeinteractive.com/product/safety-gloves/?add-to-cart=1122
+21:05:30	Warning: 	Found for https://baumeister.qodeinteractive.com/cart/?undo_item=3fe78a8acf5fda99de95303940a2420c&_wpnonce=258719e85f
+21:05:30	Warning: 	File has moved from https://baumeister.qodeinteractive.com/cart/?undo_item=3fe78a8acf5fda99de95303940a2420c&_wpnonce=258719e85f to http://baumeister.qodeinteractive.com/product/grinder/?add-to-cart=1124
+21:05:42	Warning: 	Found for https://baumeister.qodeinteractive.com/cart/?undo_item=a1d50185e7426cbb0acad1e6ca74b9aa&_wpnonce=258719e85f
+21:05:42	Warning: 	File has moved from https://baumeister.qodeinteractive.com/cart/?undo_item=a1d50185e7426cbb0acad1e6ca74b9aa&_wpnonce=258719e85f to http://baumeister.qodeinteractive.com/product/advanced-tool/?add-to-cart=1120
+21:06:03	Warning: 	Found for https://baumeister.qodeinteractive.com/cart/?undo_item=f197002b9a0853eca5e046d9ca4663d5&_wpnonce=258719e85f
+21:06:03	Warning: 	File has moved from https://baumeister.qodeinteractive.com/cart/?undo_item=f197002b9a0853eca5e046d9ca4663d5&_wpnonce=258719e85f to http://baumeister.qodeinteractive.com/product/storage-box/?add-to-cart=259
+21:06:17	Warning: 	Found for https://baumeister.qodeinteractive.com/cart/?undo_item=a8240cb8235e9c493a0c30607586166c&_wpnonce=258719e85f
+21:06:17	Warning: 	File has moved from https://baumeister.qodeinteractive.com/cart/?undo_item=a8240cb8235e9c493a0c30607586166c&_wpnonce=258719e85f to http://baumeister.qodeinteractive.com/product/diesel-generator/?add-to-cart=1115
+21:06:34	Warning: 	Found for https://baumeister.qodeinteractive.com/cart/?undo_item=c24cd76e1ce41366a4bbe8a49b02a028&_wpnonce=258719e85f
+21:06:34	Warning: 	File has moved from https://baumeister.qodeinteractive.com/cart/?undo_item=c24cd76e1ce41366a4bbe8a49b02a028&_wpnonce=258719e85f to http://baumeister.qodeinteractive.com/product-list/page/2/?add-to-cart=1128
+
+HTTrack Website Copier/3.49-2 mirror complete in 46 minutes 21 seconds : 2507 links scanned, 2319 files written (152172847 bytes overall) [55811219 bytes received at 20068 bytes/sec], 115327595 bytes transferred using HTTP compression in 1171 files, ratio 14%, 3.1 requests per connection
+(3 errors, 365 warnings, 0 messages)

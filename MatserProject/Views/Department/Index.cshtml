@@ -1,0 +1,51 @@
+﻿@model IEnumerable<EntityLayer.Concrete.Department>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    int order = 1;
+}
+<br />
+<div class="card">
+    <div class="card-header">
+        <h3 class="card-title">Departman Listesi</h3>
+        <a class="float-right btn btn-outline-warning" href="/Department/Add">Departman Ekle</a>
+    </div>
+    <!-- /.card-header -->
+    <div class="card-body">
+        <table id="example2" class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Departman Adı</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@order</td>
+                        <td>@item.Title</td>
+                        <td><a href="/Department/Delete/@item.DepartmentId" class="btn btn-outline-danger">Sil</a></td>
+                        <td><a href="/Department/Edit/@item.DepartmentId" class="btn btn-outline-success">Düzenle</a></td>
+                    </tr>
+                    order++;
+                }
+
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>#</th>
+                    <th>Departman Adı</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <!-- /.card-body -->
+</div>
+
+
+

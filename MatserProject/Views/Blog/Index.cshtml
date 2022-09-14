@@ -1,0 +1,54 @@
+﻿@model IEnumerable<EntityLayer.Concrete.Blog>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    int order = 1;
+}
+<br />
+<div class="card">
+    <div class="card-header">
+        <h3 class="card-title">Blog Listesi</h3>
+        <a class="float-right btn btn-outline-warning" href="/Blog/Add">Blog Ekle</a>
+    </div>
+    <!-- /.card-header -->
+    <div class="card-body">
+        <table id="example2" class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Başlık</th>
+                    <th>Açıklama</th>
+                    <th>Resim</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@order</td>
+                        <td>@item.BlogCategory.Title - @item.Title</td>
+                        <td>
+                            @item.Description.Substring(0, item.Description.Substring(0, 200).LastIndexOf(" "))...
+                        </td>
+                        <td><img width="200" src="@item.ImageUrl" /></td>
+                        <td><a href="/Blog/Delete/@item.BlogId" class="btn btn-outline-danger">Sil</a></td>
+                        <td><a href="/Blog/Edit/@item.BlogId" class="btn btn-outline-success">Düzenle</a></td>
+                    </tr>
+                    order++;
+                }
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>#</th>
+                    <th>Başlık</th>
+                    <th>Açıklama</th>
+                    <th>Resim</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,70 @@
+﻿@using EntityLayer.Concrete
+@model IEnumerable<EntityLayer.Concrete.Faq>
+@{
+    ViewData["Title"] = "Faq";
+    Layout = "~/Views/Shared/_TemplateLayout.cshtml";
+}
+
+<div class="mkd-content" style="margin-top: -80px">
+    <div class="mkd-content-inner">
+        <div class="mkd-title-holder mkd-centered-type mkd-preload-background mkd-has-bg-image mkd-bg-parallax" style="height: 595px; background-image: url(/FactoryTemplate/baumeister.qodeinteractive.com/wp-content/uploads/2017/11/p5h-faq-1.jpg);" data-height="515">
+            <div class="mkd-title-image">
+                <img itemprop="image" src="../wp-content/uploads/2017/11/p5h-faq-1.jpg" alt="h" />
+            </div>
+            <div class="mkd-title-wrapper" style="height: 515px;padding-top: 80px">
+                <div class="mkd-title-inner">
+                    <div class="mkd-grid">
+                        <h1 class="mkd-page-title entry-title" style="color: #1b1b1b">Sıkça Sorulan Sorular</h1>
+                        <p class="mkd-page-subtitle" style="color: #8b8b8b;padding: 0 16%">Başlıca sorulan sorulara ve yanıtlarına göz atabilirsiniz</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mkd-full-width">
+            <div class="mkd-full-width-inner">
+                <div class="mkd-grid-row">
+                    <div class="mkd-page-content-holder mkd-grid-col-12">
+
+                        <div class="mkd-row-grid-section-wrapper " style="background-color:#ffffff">
+                            <div class="mkd-row-grid-section">
+                                <div class="vc_row wpb_row vc_row-fluid vc_custom_1512143535385">
+                                    <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-offset-0 vc_col-lg-12 vc_col-md-offset-0 vc_col-md-12 vc_col-sm-offset-0 vc_col-xs-12">
+                                        <div class="vc_column-inner vc_custom_1511441261259">
+                                            <div class="wpb_wrappe mt-5 mb-5">
+                                                <div class="mkd-accordion-holder mkd-ac-default  mkd-accordion mkd-ac-boxed clearfix">
+                                                    @foreach (var item in Model)
+                                                    {
+
+
+
+                                                        <h5 class="mkd-accordion-title ">
+                                                            <span class="mkd-tab-title">@item.Title</span>
+                                                        </h5>
+                                                        <div class="mkd-accordion-content">
+                                                            <div class="mkd-accordion-content-inner">
+                                                                <div class="wpb_text_column wpb_content_element">
+                                                                    <div class="wpb_wrapper">
+                                                                        <p>@item.Description</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+
+                                                    }
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+

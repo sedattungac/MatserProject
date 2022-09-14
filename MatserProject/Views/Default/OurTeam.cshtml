@@ -1,0 +1,99 @@
+﻿@using EntityLayer.Concrete
+@model IEnumerable<EntityLayer.Concrete.Personal>
+@{
+    ViewData["Title"] = "OurTeam";
+    Layout = "~/Views/Shared/_TemplateLayout.cshtml";
+}
+
+<div class="mkd-content" style="margin-top: -80px">
+    <div class="mkd-content-inner">
+        <div class="mkd-title-holder mkd-centered-type mkd-preload-background mkd-has-bg-image mkd-bg-parallax" style="height: 595px; background-color: #ffffff; background-image: url(/FactoryTemplate/baumeister.qodeinteractive.com/wp-content/uploads/2017/11/p5h-team-1.jpg);" data-height="515">
+            <div class="mkd-title-image">
+                <img itemprop="image" src="../wp-content/uploads/2017/11/p5h-team-1.jpg" alt="k" />
+            </div>
+            <div class="mkd-title-wrapper" style="height: 515px;padding-top: 80px">
+                <div class="mkd-title-inner">
+                    <div class="mkd-grid">
+                        <h1 class="mkd-page-title entry-title">Çalışma Ekibimiz</h1>
+                        <p class="mkd-page-subtitle" style="color: #ffffff;padding: 0 16%">Tecrübeli çalışma arkadaşlarımızla sizlere profesyonel hizmetler sunmaktayız.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mkd-full-width">
+            <div class="mkd-full-width-inner">
+                <div class="mkd-grid-row">
+                    <div class="mkd-page-content-holder mkd-grid-col-12">
+                        <div class="mkd-row-grid-section-wrapper " style="background-color:#ffffff">
+                            <div class="mkd-row-grid-section">
+                                <div class="vc_row wpb_row vc_row-fluid vc_custom_1512380663640">
+                                    <div class="wpb_column vc_column_container vc_col-sm-12">
+                                        <div class="vc_column-inner">
+                                            <div class="wpb_wrapper">
+                                                <div class="mkd-team-list-holder mkd-normal-space  mkd-tl-four-columns">
+                                                    <div class="mkd-tl-inner mkd-outer-space " data-number-of-items="4" data-enable-navigation="no" data-enable-pagination="no">
+                                                        @foreach (var item in Model)
+                                                        {
+                                                            <div class="mkd-team mkd-item-space info-bellow mt-5">
+                                                                <div class="mkd-team-inner">
+                                                                    <div class="mkd-team-image">
+                                                                        <a itemprop="url" href="../team-member/jason-rice/index.html">
+                                                                            <img width="600" height="600" src="@item.ImageUrl" class="attachment-full size-full wp-post-image" alt="k" loading="lazy" sizes="(max-width: 600px) 100vw, 600px" />
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="mkd-team-info">
+                                                                        <div class="mkd-team-title-holder">
+                                                                            <h4 itemprop="name" class="mkd-team-name entry-title">
+                                                                                <a itemprop="url" href="../team-member/jason-rice/index.html">@item.FullName</a>
+                                                                            </h4>
+                                                                            <p class="mkd-team-position">@item.Department.Title</p>
+                                                                        </div>
+                                                                        <div class="mkd-team-social-holder-between">
+                                                                            <div class="mkd-team-social">
+                                                                                <div class="mkd-team-social-inner">
+                                                                                    <div class="mkd-team-social-wrapp">
+                                                                                        <span class="mkd-icon-shortcode mkd-normal   ">
+                                                                                            <a class="" href="https://wa.me/@item.Telephone" target="_blank">
+                                                                                                <i class="mkd-icon-font-awesome fa fa-whatsapp mkd-icon-element"></i>
+                                                                                            </a>
+                                                                                        </span>
+                                                                                        <span class="mkd-icon-shortcode mkd-normal   ">
+                                                                                            <a class="" href="tel:@item.Telephone" target="_blank">
+                                                                                                <i class="mkd-icon-font-awesome fa fa-phone mkd-icon-element"></i>
+                                                                                            </a>
+                                                                                        </span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        }
+
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><div class="vc_row wpb_row vc_row-fluid vc_row-o-content-middle vc_row-flex mkd-content-aligment-center">
+                            <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-offset-0 vc_col-md-offset-0 vc_col-sm-offset-0 vc_col-xs-12">
+                                <div class="vc_column-inner">
+                                    <div class="wpb_wrapper">
+                                        <a itemprop="url" href="/Default/Contact" target="_self" class="mkd-btn mkd-btn-full-width mkd-btn-solid">
+                                            <span class="mkd-btn-text" style="font-size: 60px;font-family: Oswald;letter-spacing: 0;height: 200px">Bize Ulaşın!</span>
+                                            <span class="mkd-btn-icon"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

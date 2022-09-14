@@ -1,0 +1,51 @@
+﻿@model IEnumerable<EntityLayer.Concrete.Contact>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>İletişim</h1>
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
+</section>
+
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                @foreach (var item in Model)
+                {
+                    <div class="timeline">
+                        <div class="time-label">
+                            <span class="bg-red">@item.Date.ToShortDateString()</span>
+                        </div>
+                        <div>
+                            <i class="fas fa-envelope bg-blue"></i>
+                            <div class="timeline-item">
+                                <span class="time"><i class="fas fa-clock"></i> @item.Date.ToShortTimeString()</span>
+                                <h3 class="timeline-header"><a href="#">@item.FullName</a> - <b>@item.Telephone</b></h3>
+                                <div class="timeline-body">
+                                    @item.Message
+                                    <p><a href="mailto:@item.Email">@item.Email</a></p>
+                                </div>
+                                <div class="timeline-footer">
+                                    <a href="/Contact/Delete/@item.ContactId" class="btn btn-danger btn-sm">Sil</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+            <!-- /.col -->
+        </div>
+    </div>
+    <!-- /.timeline -->
+
+</section>
+<!-- /.content -->
