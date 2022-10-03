@@ -12,8 +12,8 @@ namespace DataAccessLayer.Concrete
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("server=AKSLT047; database=DbMatser;integrated security=true");
-            //optionsBuilder.UseSqlServer("Data Source=77.245.159.136;Initial Catalog=matser;User ID=matser;Password=A.sd12345678987654321;persist security info=True");
+            //optionsBuilder.UseSqlServer("server=AKSLT047; database=DbMatser;integrated security=true");
+            optionsBuilder.UseSqlServer("Data Source=185.87.254.56;Initial Catalog=matser;User ID=matser;Password=A.sd12345678987654321;persist security info=True");
         }
         public DbSet<About> Abouts { get; set; }
         public DbSet<Admin> Admins { get; set; }
@@ -26,6 +26,12 @@ namespace DataAccessLayer.Concrete
         public DbSet<Product> Products { get; set; }
         public DbSet<ProductCategory> ProductCategories { get; set; }
         public DbSet<Service> Services { get; set; }
+        public DbSet<MachineCategory> MachineCategories { get; set; }
+        public DbSet<Machine> Machines { get; set; }
+        public DbSet<Newsletter> Newsletters { get; set; }
+        public DbSet<Slider> Sliders { get; set; }
+        public DbSet<Email> Emails { get; set; }
+
 
     }
 }

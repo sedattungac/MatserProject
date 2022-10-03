@@ -5,6 +5,7 @@ using DataAccessLayer.Concrete;
 using DataAccessLayer.EntityFramework;
 using EntityLayer.Concrete;
 using FluentValidation.Results;
+using MatserProject.Models.ListDataClass;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -24,6 +25,9 @@ namespace MatserProject.Controllers
         PersonalManager personalManager = new PersonalManager(new EfPersonalDal());
         ProductManager productManager = new ProductManager(new EfProductDal());
         ServiceManager serviceManager = new ServiceManager(new EfServiceDal());
+        MachineCategoryManager machineCategoryManager = new MachineCategoryManager(new EfMachineCategoryDal());
+        MachineManager machineManager = new MachineManager(new EfMachineDal());
+        NewsletterManager newsletterManager = new NewsletterManager(new EfNewsletterDal());
         public IActionResult Index()
         {
             using Context context = new Context();
@@ -154,6 +158,48 @@ namespace MatserProject.Controllers
         {
             var value = serviceManager.TGetList();
             return View(value);
+        }
+
+        public IActionResult StockList()
+        {
+            MachineListData machineList = new MachineListData
+            {
+                MachineCategoryList = machineCategoryManager.TGetList(),
+                MachineList = machineManager.TGetList(),
+            };
+            return View(machineList);
+
+        }
+
+        public IActionResult Machine(int id)
+        {
+            Context c = new Context();
+            ViewBag.category = c.Machines.Where(x => x.MachineCategoryId == id).Include(x => x.MachineCategory).Select(x => x.MachineCategory.Title).FirstOrDefault();
+            ViewBag.machineTitle = c.Machines.Where(x => x.MachineId == id).Select(x => x.Name).FirstOrDefault();
+            var valueId = c.Machines.Include(x => x.MachineCategory).Where(x => x.MachineCategoryId == id).Select(x => x.MachineCategoryId).FirstOrDefault();
+            var value = c.Machines.Include(x => x.MachineCategory).Where(x => x.MachineId == id).ToList();
+            return View(value);
+        }
+        public IActionResult MachineCategory(int id)
+        {
+            Context c = new Context();
+            ViewBag.machineCategory = c.Machines.Where(x => x.MachineCategoryId == id).Include(x => x.MachineCategory).Select(x => x.MachineCategory.Title).FirstOrDefault();
+            ViewBag.machineTitle = c.Machines.Where(x => x.MachineId == id).Select(x => x.Name).FirstOrDefault();
+            var valueId = c.Machines.Include(x => x.MachineCategory).Where(x => x.MachineCategoryId == id).Select(x => x.MachineCategoryId).FirstOrDefault();
+            var value = c.Machines.Include(x => x.MachineCategory).Where(x => x.MachineCategoryId == id).ToList();
+            return View(value);
+        }
+        [HttpGet]
+        public IActionResult Newsletter()
+        {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult Newsletter(Newsletter newsletter)
+        {
+            newsletter.Status = false;
+            newsletterManager.TAdd(newsletter);
+            return RedirectToAction("Newsletter");
         }
     }
 }

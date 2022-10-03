@@ -1,0 +1,189 @@
+﻿@using EntityLayer.Concrete
+@model IEnumerable<EntityLayer.Concrete.Machine>
+
+@{
+    ViewData["Title"] = "Machine";
+    Layout = "~/Views/Shared/_TemplateLayout.cshtml";
+}
+
+<div class="mkd-content">
+    <div class="mkd-content-inner">
+        <div class="mkd-title-holder mkd-standard-with-breadcrumbs-type mkd-preload-background mkd-has-bg-image" style="height: 595px; background-image: url(https://baumeister.qodeinteractive.com/wp-content/uploads/2017/11/blog-post-title-img.jpg);" data-height="515">
+            <div class="mkd-title-image">
+                <img itemprop="image" src="https://baumeister.qodeinteractive.com/wp-content/uploads/2017/11/blog-post-title-img.jpg" alt="b" />
+            </div>
+            <div class="mkd-title-wrapper" style="height: 515px;padding-top: 80px">
+                <div class="mkd-title-inner">
+                    <div class="mkd-grid">
+                        <div class="mkd-title-info">
+                            <h1 class="mkd-page-title entry-title">@ViewBag.machineTitle</h1>
+                        </div>
+                        <div class="mkd-breadcrumbs-info">
+                            <div itemprop="breadcrumb" class="mkd-breadcrumbs "><a itemprop="url" href="/Default/Index">Anasayfa</a><span class="mkd-delimiter">&nbsp; / &nbsp;</span><a href="/Default/MachineCategory">Stok Listesi</a> <span class="mkd-delimiter">&nbsp; / &nbsp;</span><span class="mkd-current">@ViewBag.machineTitle</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mkd-container">
+            <div class="mkd-container-inner clearfix">
+                <div class="mkd-portfolio-single-holder mkd-ps-small-images-layout">
+                    @foreach (var item in Model)
+                    {
+                        <div class="mkd-grid-row mt-5">
+                            <div class="mkd-grid-col-7">
+                                <div class="mkd-ps-image-holder">
+                                    <div class="mkd-ps-image-inner">
+                                        <div class="mkd-ps-image">
+                                            <a itemprop="image" title="h2-port-gallery-img-1" data-rel="prettyPhoto[single_pretty_photo]" href="@item.ImageUrl">
+                                                <img itemprop="image" src="@item.ImageUrl" alt="a" />
+                                            </a>
+                                        </div>
+
+                                        <div class="mkd-ps-image" style="margin-left:20px;">
+                                            <div class="row">
+                                                <a itemprop="image" title="h2-port-gallery-img-2" data-rel="prettyPhoto[single_pretty_photo]" href="@item.ImageUrl2">
+                                                    <img style="height:237px;" width="200" height="237" itemprop="image" src="@item.ImageUrl2" alt="a" />
+                                                </a>
+                                                <a itemprop="image" title="h2-port-gallery-img-3" data-rel="prettyPhoto[single_pretty_photo]" href="@item.ImageUrl3">
+                                                    <img style="height:237px;" width="200" height="237" itemprop="image" src="@item.ImageUrl3" alt="q" />
+                                                </a>
+                                                <a itemprop="image" title="h2-port-gallery-img-3" data-rel="prettyPhoto[single_pretty_photo]" href="@item.ImageUrl4">
+                                                    <img style="height:237px;" width="200" height="237" itemprop="image" src="@item.ImageUrl4" alt="q" />
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div class="mkd-ps-image">
+
+                                        </div>
+                                        <div class="mkd-ps-image">
+
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mkd-grid-col-5 position-sticky">
+                                <div class="mkd-ps-info-holder mkd-ps-info-sticky-holder">
+                                    <div class="mkd-ps-info-item mkd-ps-content-item" style=" position: -webkit-sticky; position: sticky; top: 0;">
+                                        <div class="vc_row wpb_row vc_row-fluid">
+                                            <div class="wpb_column vc_column_container vc_col-sm-12">
+                                                <div class="vc_column-inner">
+                                                    <div class="wpb_wrapper">
+                                                        <div class="wpb_text_column wpb_content_element ">
+                                                            <div class="wpb_wrapper">
+                                                                <h3>@item.Producer - @item.Name</h3>
+                                                            </div>
+                                                        </div>
+                                                        <div class="wpb_text_column wpb_content_element  vc_custom_1512469016577">
+                                                            <div class="wpb_wrapper">
+                                                                @*<p>@item.Description</p>*@
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mkd-ps-info-item mkd-ps-categories">
+                                            <h4 class="mkd-ps-info-title">Kategori:</h4>
+                                            <a itemprop="url" class="mkd-ps-info-category">@item.MachineCategory.Title</a>
+                                        </div>
+                                        <div class="mkd-ps-info-item mkd-ps-categories">
+                                            <h4 class="mkd-ps-info-title">Üretici:</h4>
+                                            <a itemprop="url" class="mkd-ps-info-category">@item.Producer</a>
+                                        </div>
+                                        <div class="mkd-ps-info-item mkd-ps-categories">
+                                            <h4 class="mkd-ps-info-title">Grup:</h4>
+                                            <a itemprop="url" class="mkd-ps-info-category">@item.Group</a>
+                                        </div>
+                                        <div class="mkd-ps-info-item mkd-ps-categories">
+                                            <h4 class="mkd-ps-info-title">Üretim Yılı:</h4>
+                                            <a itemprop="url" class="mkd-ps-info-category">@item.ModelYear</a>
+                                        </div>
+                                        <div class="mkd-ps-info-item mkd-ps-categories">
+                                            <h4 class="mkd-ps-info-title">Ebat:</h4>
+                                            <a itemprop="url" class="mkd-ps-info-category">@item.Dimension</a>
+                                        </div>
+                                        <div class="mkd-ps-info-item mkd-ps-categories">
+                                            <h4 class="mkd-ps-info-title">Teslimat Tarihi:</h4>
+                                            <a itemprop="url" class="mkd-ps-info-category">@item.DeliveryDate</a>
+                                        </div>
+                                        <div class="mkd-ps-info-item mkd-ps-categories">
+                                            <h4 class="mkd-ps-info-title">Makine Modeli:</h4>
+                                            <a itemprop="url" class="mkd-ps-info-category">@item.Name</a>
+                                        </div>
+
+                                    </div>
+                                    <div class="mkd-ps-info-item mkd-ps-tags" style=" position: -webkit-sticky; position: sticky; top: 0;">
+                                        <h4 class="mkd-ps-info-title">Etiketler:</h4>
+                                        <a itemprop="url" class="mkd-ps-info-tag">Teknoloji</a>
+                                        <a itemprop="url" class="mkd-ps-info-tag">Makine</a>
+                                        <a itemprop="url" class="mkd-ps-info-tag">Üretim</a>
+                                        <a itemprop="url" class="mkd-ps-info-tag">Satış</a>
+                                        <a itemprop="url" class="mkd-ps-info-tag">Mühendislik</a>
+                                        <a itemprop="url" class="mkd-ps-info-tag">Endüstri</a>
+                                        <a itemprop="url" class="mkd-ps-info-tag">Teknik</a>
+                                    </div>
+                                    <div class="mkd-ps-info-item mkd-ps-categories">
+                                        <a itemprop="url" href="/Default/Contact" target="_self" class="mkd-btn mkd-btn-medium mkd-btn-solid mkd-btn-icon">
+                                            <span class="mkd-btn-text">Teklif İste</span>
+                                            <span class="mkd-btn-icon"><i class="mkd-icon-font-awesome fa fa-long-arrow-right "></i></span>
+                                        </a>
+                                    </div>
+                                    <br />
+                                    <div class="mkd-tabs  mkd-tabs-standard" style=" position: -webkit-sticky; position: sticky; top: 0;">
+                                        <ul class="mkd-tabs-nav clearfix">
+                                            <li>
+                                                <a href="#tab-references">Özellikler</a>
+                                            </li>
+                                            <li>
+                                                <a href="#tab-objective">Teknik Bilgi</a>
+                                            </li>
+                                            <li>
+                                                <a href="#tab-standards">Video</a>
+                                            </li>
+                                        </ul>
+
+                                        <div class="mkd-tab-container" id="tab-references-888">
+                                            <div class="wpb_text_column wpb_content_element ">
+                                                <div class="wpb_wrapper">
+                                                    <p>@item.Description</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mkd-tab-container" id="tab-objective-232">
+                                            <div class="wpb_text_column wpb_content_element ">
+                                                <div class="wpb_wrapper">
+                                                    <p>@item.Information</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mkd-tab-container" id="tab-standards-162">
+                                            <div class="wpb_text_column wpb_content_element ">
+                                                <div class="wpb_wrapper">
+                                                    <iframe width="560" height="315" src="@item.VideoUrl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    }
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+

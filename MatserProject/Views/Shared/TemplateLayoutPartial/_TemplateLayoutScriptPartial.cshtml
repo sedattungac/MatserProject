@@ -1,6 +1,26 @@
-﻿@*<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>*@
+﻿<!--Translate-->
+<script type="text/javascript">
+    jQuery('.switcher .selected').click(function () { if (!(jQuery('.switcher .option').is(':visible'))) { jQuery('.switcher .option').stop(true, true).delay(100).slideDown(500); jQuery('.switcher .selected a').toggleClass('open') } });
+    jQuery('.switcher .option').bind('mousewheel', function (e) { var options = jQuery('.switcher .option'); if (options.is(':visible')) options.scrollTop(options.scrollTop() - e.originalEvent.wheelDelta); return false; });
+    jQuery('body').not('.switcher').mousedown(function (e) { if (jQuery('.switcher .option').is(':visible') && e.target != jQuery('.switcher .option').get(0)) { jQuery('.switcher .option').stop(true, true).delay(100).slideUp(500); jQuery('.switcher .selected a').toggleClass('open') } });
+</script>
+
+<li style="display:none" id="google_translate_element2"></li>
+<script type="text/javascript">
+    function googleTranslateElementInit2() { new google.translate.TranslateElement({ pageLanguage: 'tr', autoDisplay: false }, 'google_translate_element2'); }
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit2"></script>
+
+
+<script type="text/javascript">
+    function GTranslateGetCurrentLang() { var keyValue = document.cookie.match('(^|;) ?googtrans=([^;]*)(;|$)'); return keyValue ? keyValue[2].split('/')[2] : null; }
+    function GTranslateFireEvent(element, event) { try { if (document.createEventObject) { var evt = document.createEventObject(); element.fireEvent('on' + event, evt) } else { var evt = document.createEvent('HTMLEvents'); evt.initEvent(event, true, true); element.dispatchEvent(evt) } } catch (e) { } }
+    function doGTranslate(lang_pair) { if (lang_pair.value) lang_pair = lang_pair.value; if (lang_pair == '') return; var lang = lang_pair.split('|')[1]; if (GTranslateGetCurrentLang() == null && lang == lang_pair.split('|')[0]) return; var teCombo; var sel = document.getElementsByTagName('select'); for (var i = 0; i < sel.length; i++)if (sel[i].className == 'goog-te-combo') teCombo = sel[i]; if (document.getElementById('google_translate_element2') == null || document.getElementById('google_translate_element2').innerHTML.length == 0 || teCombo.length == 0 || teCombo.innerHTML.length == 0) { setTimeout(function () { doGTranslate(lang_pair) }, 500) } else { teCombo.value = lang; GTranslateFireEvent(teCombo, 'change'); GTranslateFireEvent(teCombo, 'change') } }
+    if (GTranslateGetCurrentLang() != null) jQuery(document).ready(function () { jQuery('div.switcher div.selected a').html(jQuery('div.switcher div.option').find('img[alt="' + GTranslateGetCurrentLang() + '"]').parent().html()); });
+</script>
+
+
+
 <script data-cfasync="false" src="~/FactoryTemplate/baumeister.qodeinteractive.com/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
 <script>
     window.RS_MODULES = window.RS_MODULES || {};
@@ -22,8 +42,11 @@
         var c = document.body.className;
         c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
         document.body.className = c;
-    })();</script>
-<script>if (typeof revslider_showDoubleJqueryError === "undefined") { function revslider_showDoubleJqueryError(sliderID) { console.log("You have some jquery.js library include that comes after the Slider Revolution files js inclusion."); console.log("To fix this, you can:"); console.log("1. Set 'Module General Options' -> 'Advanced' -> 'jQuery & OutPut Filters' -> 'Put JS to Body' to on"); console.log("2. Find the double jQuery.js inclusion and remove it"); return "Double Included jQuery Library"; } }</script>
+    })();
+</script>
+<script>
+    if (typeof revslider_showDoubleJqueryError === "undefined") { function revslider_showDoubleJqueryError(sliderID) { console.log("You have some jquery.js library include that comes after the Slider Revolution files js inclusion."); console.log("To fix this, you can:"); console.log("1. Set 'Module General Options' -> 'Advanced' -> 'jQuery & OutPut Filters' -> 'Put JS to Body' to on"); console.log("2. Find the double jQuery.js inclusion and remove it"); return "Double Included jQuery Library"; } }
+</script>
 <link rel="preload" as="font" id="rs-icon-set-fa-icon-woff" type="font/woff2" crossorigin="anonymous" href="~/FactoryTemplate/baumeister.qodeinteractive.com/wp-content/plugins/revslider/public/assets/fonts/font-awesome/fonts/fontawesome-webfont3e6e.woff2?v=4.7.0" media="all" />
 <link rel="stylesheet" property="stylesheet" id="rs-icon-set-fa-icon-css" href="~/FactoryTemplate/baumeister.qodeinteractive.com/wp-content/plugins/revslider/public/assets/fonts/font-awesome/css/font-awesome.css" type="text/css" media="all" />
 <link rel='stylesheet' id='rs-plugin-settings-css' href='~/FactoryTemplate/baumeister.qodeinteractive.com/wp-content/plugins/revslider/public/assets/css/rs6b02e.css?ver=6.5.25' type='text/css' media='all' />
@@ -82,36 +105,48 @@
 <script type='text/javascript' id='contact-form-7-js-extra'>
     /* <![CDATA[ */
     var wpcf7 = { "api": { "root": "https:\/\/baumeister.qodeinteractive.com\/wp-json\/", "namespace": "contact-form-7\/v1" } };
-    /* ]]> */</script>
+    /* ]]> */
+</script>
 <script type='text/javascript' src='~/FactoryTemplate/baumeister.qodeinteractive.com/wp-content/plugins/contact-form-7/includes/js/index4c7e.js?ver=5.6.2' id='contact-form-7-js'></script>
 <script type='text/javascript' src='~/FactoryTemplate/baumeister.qodeinteractive.com/export.qodethemes.com/_toolbar/assets/js/rbt-modules5b21.js?ver=6.0.2' id='rabbit_js-js'></script>
 <script type='text/javascript' src='~/FactoryTemplate/baumeister.qodeinteractive.com/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min1c36.js?ver=2.1.4-wc.6.8.0' id='js-cookie-js'></script>
 <script type='text/javascript' id='woocommerce-js-extra'>
     /* <![CDATA[ */
     var woocommerce_params = { "ajax_url": "\/wp-admin\/admin-ajax.php", "wc_ajax_url": "\/?wc-ajax=%%endpoint%%" };
-    /* ]]> */</script>
+    /* ]]> */
+</script>
 <script type='text/javascript' src='~/FactoryTemplate/baumeister.qodeinteractive.com/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min8e94.js?ver=6.8.0' id='woocommerce-js'></script>
 <script type='text/javascript' id='wc-cart-fragments-js-extra'>
     /* <![CDATA[ */
     var wc_cart_fragments_params = { "ajax_url": "\/wp-admin\/admin-ajax.php", "wc_ajax_url": "\/?wc-ajax=%%endpoint%%", "cart_hash_key": "wc_cart_hash_2e8d52155cfc814f182a3f4fb6df83ed", "fragment_name": "wc_fragments_2e8d52155cfc814f182a3f4fb6df83ed", "request_timeout": "5000" };
-    /* ]]> */</script>
+    /* ]]> */
+</script>
 <script type='text/javascript' src='~/FactoryTemplate/baumeister.qodeinteractive.com/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min8e94.js?ver=6.8.0' id='wc-cart-fragments-js'></script>
 <script type='text/javascript' id='ppress-frontend-script-js-extra'>
     /* <![CDATA[ */
     var pp_ajax_form = { "ajaxurl": "https:\/\/baumeister.qodeinteractive.com\/wp-admin\/admin-ajax.php", "confirm_delete": "Are you sure?", "deleting_text": "Deleting...", "deleting_error": "An error occurred. Please try again.", "nonce": "2207f2f743", "disable_ajax_form": "false", "is_checkout": "0", "is_checkout_tax_enabled": "0" };
-    /* ]]> */</script>
+    /* ]]> */
+</script>
 <script type='text/javascript' src='~/FactoryTemplate/baumeister.qodeinteractive.com/wp-content/plugins/wp-user-avatar/assets/js/frontend.minbfce.js?ver=4.1.0' id='ppress-frontend-script-js'></script>
 <script type='text/javascript' src='~/FactoryTemplate/baumeister.qodeinteractive.com/wp-content/plugins/duracelltomi-google-tag-manager/js/gtm4wp-form-move-tracker34dd.js?ver=1.16.1' id='gtm4wp-form-move-tracker-js'></script>
 <script type='text/javascript' src='~/FactoryTemplate/baumeister.qodeinteractive.com/wp-includes/js/jquery/ui/core.min0028.js?ver=1.13.1' id='jquery-ui-core-js'></script>
 <script type='text/javascript' src='~/FactoryTemplate/baumeister.qodeinteractive.com/wp-includes/js/jquery/ui/tabs.min0028.js?ver=1.13.1' id='jquery-ui-tabs-js'></script>
 <script type='text/javascript' src='~/FactoryTemplate/baumeister.qodeinteractive.com/wp-includes/js/jquery/ui/accordion.min0028.js?ver=1.13.1' id='jquery-ui-accordion-js'></script>
-<script type='text/javascript' id='mediaelement-core-js-before'>var mejsL10n = { "language": "en", "strings": { "mejs.download-file": "Download File", "mejs.install-flash": "You are using a browser that does not have Flash player enabled or installed. Please turn on your Flash player plugin or download the latest version from https:\/\/get.adobe.com\/flashplayer\/", "mejs.fullscreen": "Fullscreen", "mejs.play": "Play", "mejs.pause": "Pause", "mejs.time-slider": "Time Slider", "mejs.time-help-text": "Use Left\/Right Arrow keys to advance one second, Up\/Down arrows to advance ten seconds.", "mejs.live-broadcast": "Live Broadcast", "mejs.volume-help-text": "Use Up\/Down Arrow keys to increase or decrease volume.", "mejs.unmute": "Unmute", "mejs.mute": "Mute", "mejs.volume-slider": "Volume Slider", "mejs.video-player": "Video Player", "mejs.audio-player": "Audio Player", "mejs.captions-subtitles": "Captions\/Subtitles", "mejs.captions-chapters": "Chapters", "mejs.none": "None", "mejs.afrikaans": "Afrikaans", "mejs.albanian": "Albanian", "mejs.arabic": "Arabic", "mejs.belarusian": "Belarusian", "mejs.bulgarian": "Bulgarian", "mejs.catalan": "Catalan", "mejs.chinese": "Chinese", "mejs.chinese-simplified": "Chinese (Simplified)", "mejs.chinese-traditional": "Chinese (Traditional)", "mejs.croatian": "Croatian", "mejs.czech": "Czech", "mejs.danish": "Danish", "mejs.dutch": "Dutch", "mejs.english": "English", "mejs.estonian": "Estonian", "mejs.filipino": "Filipino", "mejs.finnish": "Finnish", "mejs.french": "French", "mejs.galician": "Galician", "mejs.german": "German", "mejs.greek": "Greek", "mejs.haitian-creole": "Haitian Creole", "mejs.hebrew": "Hebrew", "mejs.hindi": "Hindi", "mejs.hungarian": "Hungarian", "mejs.icelandic": "Icelandic", "mejs.indonesian": "Indonesian", "mejs.irish": "Irish", "mejs.italian": "Italian", "mejs.japanese": "Japanese", "mejs.korean": "Korean", "mejs.latvian": "Latvian", "mejs.lithuanian": "Lithuanian", "mejs.macedonian": "Macedonian", "mejs.malay": "Malay", "mejs.maltese": "Maltese", "mejs.norwegian": "Norwegian", "mejs.persian": "Persian", "mejs.polish": "Polish", "mejs.portuguese": "Portuguese", "mejs.romanian": "Romanian", "mejs.russian": "Russian", "mejs.serbian": "Serbian", "mejs.slovak": "Slovak", "mejs.slovenian": "Slovenian", "mejs.spanish": "Spanish", "mejs.swahili": "Swahili", "mejs.swedish": "Swedish", "mejs.tagalog": "Tagalog", "mejs.thai": "Thai", "mejs.turkish": "Turkish", "mejs.ukrainian": "Ukrainian", "mejs.vietnamese": "Vietnamese", "mejs.welsh": "Welsh", "mejs.yiddish": "Yiddish" } };</script>
+<script type='text/javascript' id='mediaelement-core-js-before'>
+    var mejsL10n = { "language": "en", "strings": { "mejs.download-file": "Download File", "mejs.install-flash": "You are using a browser that does not have Flash player enabled or installed. Please turn on your Flash player plugin or download the latest version from https:\/\/get.adobe.com\/flashplayer\/", "mejs.fullscreen": "Fullscreen", "mejs.play": "Play", "mejs.pause": "Pause", "mejs.time-slider": "Time Slider", "mejs.time-help-text": "Use Left\/Right Arrow keys to advance one second, Up\/Down arrows to advance ten seconds.", "mejs.live-broadcast": "Live Broadcast", "mejs.volume-help-text": "Use Up\/Down Arrow keys to increase or decrease volume.", "mejs.unmute": "Unmute", "mejs.mute": "Mute", "mejs.volume-slider": "Volume Slider", "mejs.video-player": "Video Player", "mejs.audio-player": "Audio Player", "mejs.captions-subtitles": "Captions\/Subtitles", "mejs.captions-chapters": "Chapters", "mejs.none": "None", "mejs.afrikaans": "Afrikaans", "mejs.albanian": "Albanian", "mejs.arabic": "Arabic", "mejs.belarusian": "Belarusian", "mejs.bulgarian": "Bulgarian", "mejs.catalan": "Catalan", "mejs.chinese": "Chinese", "mejs.chinese-simplified": "Chinese (Simplified)", "mejs.chinese-traditional": "Chinese (Traditional)", "mejs.croatian": "Croatian", "mejs.czech": "Czech", "mejs.danish": "Danish", "mejs.dutch": "Dutch", "mejs.english": "English", "mejs.estonian": "Estonian", "mejs.filipino": "Filipino", "mejs.finnish": "Finnish", "mejs.french": "French", "mejs.galician": "Galician", "mejs.german": "German", "mejs.greek": "Greek", "mejs.haitian-creole": "Haitian Creole", "mejs.hebrew": "Hebrew", "mejs.hindi": "Hindi", "mejs.hungarian": "Hungarian", "mejs.icelandic": "Icelandic", "mejs.indonesian": "Indonesian", "mejs.irish": "Irish", "mejs.italian": "Italian", "mejs.japanese": "Japanese", "mejs.korean": "Korean", "mejs.latvian": "Latvian", "mejs.lithuanian": "Lithuanian", "mejs.macedonian": "Macedonian", "mejs.malay": "Malay", "mejs.maltese": "Maltese", "mejs.norwegian": "Norwegian", "mejs.persian": "Persian", "mejs.polish": "Polish", "mejs.portuguese": "Portuguese", "mejs.romanian": "Romanian", "mejs.russian": "Russian", "mejs.serbian": "Serbian", "mejs.slovak": "Slovak", "mejs.slovenian": "Slovenian", "mejs.spanish": "Spanish", "mejs.swahili": "Swahili", "mejs.swedish": "Swedish", "mejs.tagalog": "Tagalog", "mejs.thai": "Thai", "mejs.turkish": "Turkish", "mejs.ukrainian": "Ukrainian", "mejs.vietnamese": "Vietnamese", "mejs.welsh": "Welsh", "mejs.yiddish": "Yiddish" } };
+</script>
 <script type='text/javascript' src='~/FactoryTemplate/baumeister.qodeinteractive.com/wp-includes/js/mediaelement/mediaelement-and-player.min08e1.js?ver=4.2.16' id='mediaelement-core-js'></script>
 <script type='text/javascript' src='~/FactoryTemplate/baumeister.qodeinteractive.com/wp-includes/js/mediaelement/mediaelement-migrate.min5b21.js?ver=6.0.2' id='mediaelement-migrate-js'></script>
 <script type='text/javascript' id='mediaelement-js-extra'>
     /* <![CDATA[ */
     var _wpmejsSettings = { "pluginPath": "\/wp-includes\/js\/mediaelement\/", "classPrefix": "mejs-", "stretching": "responsive" };
-    /* ]]> */</script>
+    /* ]]> */
+</script>
+<!-- Bootstrap JS -->
+@*<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>*@
+
 <script type='text/javascript' src='~/FactoryTemplate/baumeister.qodeinteractive.com/wp-includes/js/mediaelement/wp-mediaelement.min5b21.js?ver=6.0.2' id='wp-mediaelement-js'></script>
 <script type='text/javascript' src='~/FactoryTemplate/baumeister.qodeinteractive.com/wp-content/themes/baumeister/assets/js/modules/plugins/jquery.appear5b21.js?ver=6.0.2' id='appear-js'></script>
 <script type='text/javascript' src='~/FactoryTemplate/baumeister.qodeinteractive.com/wp-content/themes/baumeister/assets/js/modules/plugins/modernizr.min5b21.js?ver=6.0.2' id='modernizr-js'></script>
@@ -137,16 +172,21 @@
 <script type='text/javascript' src='~/FactoryTemplate/baumeister.qodeinteractive.com/wp-content/plugins/mkd-core/shortcodes/pie-chart/assets/js/plugins/easypiechart5b21.js?ver=6.0.2' id='easypiechart-js'></script>
 <script type='text/javascript' src='~/FactoryTemplate/baumeister.qodeinteractive.com/wp-content/plugins/woocommerce/assets/js/select2/select2.full.min1385.js?ver=4.0.3-wc.6.8.0' id='select2-js'></script>
 <script type='text/javascript' src='http://maps.googleapis.com/maps/api/js?key=AIzaSyBQTukooUgzxI6RBwRGdF2OPbHJ8BEowC8&amp;ver=6.0.2' id='baumeister-mikado-google-map-api-js'></script>
+<script type='text/javascript' src='~/FactoryTemplate/baumeister.qodeinteractive.com/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.mine1b2.js?ver=6.9.0' id='wpb_composer_front_js-js'></script>
+
 <script type='text/javascript' id='baumeister-mikado-modules-js-extra'>
+
     /* <![CDATA[ */
-    var mkdGlobalVars = { "vars": { "mkdAddForAdminBar": 0, "mkdElementAppearAmount": -100, "mkdAjaxUrl": "https:\/\/baumeister.qodeinteractive.com\/wp-admin\/admin-ajax.php", "mkdStickyHeaderHeight": 70, "mkdStickyHeaderTransparencyHeight": 70, "mkdTopBarHeight": 60, "mkdLogoAreaHeight": 0, "mkdMenuAreaHeight": 160, "mkdMobileHeaderHeight": 70 } };
+    var mkdGlobalVars = { "vars": { "mkdAddForAdminBar": 0, "mkdElementAppearAmount": -100, "mkdAjaxUrl": "https:\/\/FactoryTemplate\/baumeister.qodeinteractive.com\/wp-admin\/admin-ajax.php", "mkdStickyHeaderHeight": 70, "mkdStickyHeaderTransparencyHeight": 70, "mkdTopBarHeight": 60, "mkdLogoAreaHeight": 0, "mkdMenuAreaHeight": 160, "mkdMobileHeaderHeight": 70 } };
     var mkdPerPageVars = { "vars": { "mkdStickyScrollAmount": 1100, "mkdHeaderTransparencyHeight": 0, "mkdHeaderVerticalWidth": 0 } };
-    /* ]]> */</script>
+    /* ]]> */
+</script>
 <script type='text/javascript' src='~/FactoryTemplate/baumeister.qodeinteractive.com/wp-content/themes/baumeister/assets/js/modules.min5b21.js?ver=6.0.2' id='baumeister-mikado-modules-js'></script>
 <script type='text/javascript' id='wpb_composer_front_js-js-extra'>
     /* <![CDATA[ */
     var vcData = { "currentTheme": { "slug": "baumeister" } };
-    /* ]]> */</script>
+    /* ]]> */
+</script>
 <script type='text/javascript' src='~/FactoryTemplate/baumeister.qodeinteractive.com/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.mine1b2.js?ver=6.9.0' id='wpb_composer_front_js-js'></script>
 <script id="rs-initialisation-scripts">
     var tpj = jQuery;
@@ -221,124 +261,7 @@
             });
 
         }
-    }
+    } // End of RevInitScript
 
-
-        < noscript > <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KTQ2BTD" height="0" width="0" style="display:none;visibility:hidden" aria-hidden="true"></iframe></noscript >
-            <script type="application/ld+json">{"context":"https:\/\/schema.org\/","type":"Product","id":"https:\/\/baumeister.qodeinteractive.com\/product\/chain-saw\/#product","name":"Chain Saw","url":"https:\/\/baumeister.qodeinteractive.com\/product\/chain-saw\/","description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor in.","image":"https:\/\/baumeister.qodeinteractive.com\/wp-content\/uploads\/2017\/11\/shop-img-9.jpg","sku":"09","offers":[{"type":"Offer","price":"1500","priceValidUntil":"2023-12-31","priceSpecification":{"price":"1500","priceCurrency":"USD","valueAddedTaxIncluded":"false"},"priceCurrency":"USD","availability":"http:\/\/schema.org\/InStock","url":"https:\/\/baumeister.qodeinteractive.com\/product\/chain-saw\/","seller":{"type":"Organization","name":"Baumeister","url":"https:\/\/baumeister.qodeinteractive.com"}}],"aggregateRating":{"type":"AggregateRating","ratingValue":"5.00","reviewCount":1},"review":[{"type":"Review","reviewRating":{"type":"Rating","bestRating":"5","ratingValue":"5","worstRating":"1"},"author":{"type":"Person","name":"Dylan Griffin"},"reviewBody":"Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet quisque rutrum aenean.","datePublished":"2017-12-01T13:07:35+00:00"}]}</script>
-<script type="text/javascript">
-    (function () {
-var c = document.body.className;
-    c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
-    document.body.className = c;
-})();
-</script>
-<link rel='stylesheet' id='rs-plugin-settings-css' href='~/FactoryTemplate/baumeister.qodeinteractive.com/wp-content/plugins/revslider/public/assets/css/rs6b02e.css?ver=6.5.25' type='text/css' media='all' />
-<style id='rs-plugin-settings-inline-css' type='text/css'>
-    #rs-demo-id {
-    }
-</style>
-<script type='text/javascript' src='~/FactoryTemplate/baumeister.qodeinteractive.com/wp-content/plugins/anti-spam/assets/js/anti-spamd5a8.js?ver=7.3.1' id='anti-spam-script-js'></script>
-<script type='text/javascript' src='~/FactoryTemplate/baumeister.qodeinteractive.com/wp-includes/js/dist/vendor/regenerator-runtime.min3937.js?ver=0.13.9' id='regenerator-runtime-js'></script>
-<script type='text/javascript' src='~/FactoryTemplate/baumeister.qodeinteractive.com/wp-includes/js/dist/vendor/wp-polyfill.min2c7c.js?ver=3.15.0' id='wp-polyfill-js'></script>
-<script type='text/javascript' id='contact-form-7-js-extra'>
-                /* <![CDATA[ */
-                    var wpcf7 = {"api": {"root": "https:\/\/baumeister.qodeinteractive.com\/wp-json\/", "namespace": "contact-form-7\/v1" } };
-                /* ]]> */
-</script>
-<script type='text/javascript' src='~/FactoryTemplate/baumeister.qodeinteractive.com/wp-content/plugins/contact-form-7/includes/js/index4c7e.js?ver=5.6.2' id='contact-form-7-js'></script>
-<script type='text/javascript' src='~/FactoryTemplate/baumeister.qodeinteractive.com/export.qodethemes.com/_toolbar/assets/js/rbt-modules5b21.js?ver=6.0.2' id='rabbit_js-js'></script>
-<script type='text/javascript' id='wc-single-product-js-extra'>
-                /* <![CDATA[ */
-                    var wc_single_product_params = {"i18n_required_rating_text": "Please select a rating", "review_rating_required": "yes", "flexslider": {"rtl": false, "animation": "slide", "smoothHeight": true, "directionNav": false, "controlNav": "thumbnails", "slideshow": false, "animationSpeed": 500, "animationLoop": false, "allowOneSlide": false }, "zoom_enabled": "", "zoom_options": [], "photoswipe_enabled": "", "photoswipe_options": {"shareEl": false, "closeOnScroll": false, "history": false, "hideAnimationDuration": 0, "showAnimationDuration": 0 }, "flexslider_enabled": "" };
-                /* ]]> */
-</script>
-<script type='text/javascript' src='~/FactoryTemplate/baumeister.qodeinteractive.com/wp-content/plugins/woocommerce/assets/js/frontend/single-product.min8e94.js?ver=6.8.0' id='wc-single-product-js'></script>
-<script type='text/javascript' src='~/FactoryTemplate/baumeister.qodeinteractive.com/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min1c36.js?ver=2.1.4-wc.6.8.0' id='js-cookie-js'></script>
-<script type='text/javascript' id='woocommerce-js-extra'>
-                /* <![CDATA[ */
-                    var woocommerce_params = {"ajax_url": "\/wp-admin\/admin-ajax.php", "wc_ajax_url": "\/?wc-ajax=%%endpoint%%" };
-                /* ]]> */
-</script>
-<script type='text/javascript' src='~/FactoryTemplate/baumeister.qodeinteractive.com/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min8e94.js?ver=6.8.0' id='woocommerce-js'></script>
-<script type='text/javascript' id='wc-cart-fragments-js-extra'>
-                /* <![CDATA[ */
-                    var wc_cart_fragments_params = {"ajax_url": "\/wp-admin\/admin-ajax.php", "wc_ajax_url": "\/?wc-ajax=%%endpoint%%", "cart_hash_key": "wc_cart_hash_2e8d52155cfc814f182a3f4fb6df83ed", "fragment_name": "wc_fragments_2e8d52155cfc814f182a3f4fb6df83ed", "request_timeout": "5000" };
-                /* ]]> */
-</script>
-<script type='text/javascript' src='~/FactoryTemplate/baumeister.qodeinteractive.com/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min8e94.js?ver=6.8.0' id='wc-cart-fragments-js'></script>
-<script type='text/javascript' id='ppress-frontend-script-js-extra'>
-                /* <![CDATA[ */
-                    var pp_ajax_form = {"ajaxurl": "https:\/\/baumeister.qodeinteractive.com\/wp-admin\/admin-ajax.php", "confirm_delete": "Are you sure?", "deleting_text": "Deleting...", "deleting_error": "An error occurred. Please try again.", "nonce": "2207f2f743", "disable_ajax_form": "false", "is_checkout": "0", "is_checkout_tax_enabled": "0" };
-                    /* ]]> */
-</script>
-<script type='text/javascript' src='~/FactoryTemplate/baumeister.qodeinteractive.com/wp-content/plugins/wp-user-avatar/assets/js/frontend.minbfce.js?ver=4.1.0' id='ppress-frontend-script-js'></script>
-<script type='text/javascript' src='~/FactoryTemplate/baumeister.qodeinteractive.com/wp-content/plugins/duracelltomi-google-tag-manager/js/gtm4wp-form-move-tracker34dd.js?ver=1.16.1' id='gtm4wp-form-move-tracker-js'></script>
-<script type='text/javascript' src='~/FactoryTemplate/baumeister.qodeinteractive.com/wp-includes/js/jquery/ui/core.min0028.js?ver=1.13.1' id='jquery-ui-core-js'></script>
-<script type='text/javascript' src='~/FactoryTemplate/baumeister.qodeinteractive.com/wp-includes/js/jquery/ui/tabs.min0028.js?ver=1.13.1' id='jquery-ui-tabs-js'></script>
-<script type='text/javascript' src='~/FactoryTemplate/baumeister.qodeinteractive.com/wp-includes/js/jquery/ui/accordion.min0028.js?ver=1.13.1' id='jquery-ui-accordion-js'></script>
-<script type='text/javascript' id='mediaelement-core-js-before'>
-    var mejsL10n = {"language": "en", "strings": {"mejs.download-file": "Download File", "mejs.install-flash": "You are using a browser that does not have Flash player enabled or installed. Please turn on your Flash player plugin or download the latest version from https:\/\/get.adobe.com\/flashplayer\/", "mejs.fullscreen": "Fullscreen", "mejs.play": "Play", "mejs.pause": "Pause", "mejs.time-slider": "Time Slider", "mejs.time-help-text": "Use Left\/Right Arrow keys to advance one second, Up\/Down arrows to advance ten seconds.", "mejs.live-broadcast": "Live Broadcast", "mejs.volume-help-text": "Use Up\/Down Arrow keys to increase or decrease volume.", "mejs.unmute": "Unmute", "mejs.mute": "Mute", "mejs.volume-slider": "Volume Slider", "mejs.video-player": "Video Player", "mejs.audio-player": "Audio Player", "mejs.captions-subtitles": "Captions\/Subtitles", "mejs.captions-chapters": "Chapters", "mejs.none": "None", "mejs.afrikaans": "Afrikaans", "mejs.albanian": "Albanian", "mejs.arabic": "Arabic", "mejs.belarusian": "Belarusian", "mejs.bulgarian": "Bulgarian", "mejs.catalan": "Catalan", "mejs.chinese": "Chinese", "mejs.chinese-simplified": "Chinese (Simplified)", "mejs.chinese-traditional": "Chinese (Traditional)", "mejs.croatian": "Croatian", "mejs.czech": "Czech", "mejs.danish": "Danish", "mejs.dutch": "Dutch", "mejs.english": "English", "mejs.estonian": "Estonian", "mejs.filipino": "Filipino", "mejs.finnish": "Finnish", "mejs.french": "French", "mejs.galician": "Galician", "mejs.german": "German", "mejs.greek": "Greek", "mejs.haitian-creole": "Haitian Creole", "mejs.hebrew": "Hebrew", "mejs.hindi": "Hindi", "mejs.hungarian": "Hungarian", "mejs.icelandic": "Icelandic", "mejs.indonesian": "Indonesian", "mejs.irish": "Irish", "mejs.italian": "Italian", "mejs.japanese": "Japanese", "mejs.korean": "Korean", "mejs.latvian": "Latvian", "mejs.lithuanian": "Lithuanian", "mejs.macedonian": "Macedonian", "mejs.malay": "Malay", "mejs.maltese": "Maltese", "mejs.norwegian": "Norwegian", "mejs.persian": "Persian", "mejs.polish": "Polish", "mejs.portuguese": "Portuguese", "mejs.romanian": "Romanian", "mejs.russian": "Russian", "mejs.serbian": "Serbian", "mejs.slovak": "Slovak", "mejs.slovenian": "Slovenian", "mejs.spanish": "Spanish", "mejs.swahili": "Swahili", "mejs.swedish": "Swedish", "mejs.tagalog": "Tagalog", "mejs.thai": "Thai", "mejs.turkish": "Turkish", "mejs.ukrainian": "Ukrainian", "mejs.vietnamese": "Vietnamese", "mejs.welsh": "Welsh", "mejs.yiddish": "Yiddish" } };
-</script>
-<script type='text/javascript' src='../../wp-includes/js/mediaelement/mediaelement-and-player.min08e1.js?ver=4.2.16' id='mediaelement-core-js'></script>
-<script type='text/javascript' src='../../wp-includes/js/mediaelement/mediaelement-migrate.min5b21.js?ver=6.0.2' id='mediaelement-migrate-js'></script>
-<script type='text/javascript' id='mediaelement-js-extra'>
-                /* <![CDATA[ */
-                    var _wpmejsSettings = {"pluginPath": "\/wp-includes\/js\/mediaelement\/", "classPrefix": "mejs-", "stretching": "responsive" };
-                /* ]]> */
-</script>
-<script type='text/javascript' src='~/FactoryTemplate/baumeister.qodeinteractive.com/wp-includes/js/mediaelement/wp-mediaelement.min5b21.js?ver=6.0.2' id='wp-mediaelement-js'></script>
-<script type='text/javascript' src='~/FactoryTemplate/baumeister.qodeinteractive.com/wp-content/themes/baumeister/assets/js/modules/plugins/jquery.appear5b21.js?ver=6.0.2' id='appear-js'></script>
-<script type='text/javascript' src='~/FactoryTemplate/baumeister.qodeinteractive.com/wp-content/themes/baumeister/assets/js/modules/plugins/modernizr.min5b21.js?ver=6.0.2' id='modernizr-js'></script>
-<script type='text/javascript' src='~/FactoryTemplate/baumeister.qodeinteractive.com/wp-includes/js/hoverIntent.min3e5a.js?ver=1.10.2' id='hoverIntent-js'></script>
-<script type='text/javascript' src='~/FactoryTemplate/baumeister.qodeinteractive.com/wp-content/themes/baumeister/assets/js/modules/plugins/jquery.plugin5b21.js?ver=6.0.2' id='jquery-plugin-js'></script>
-<script type='text/javascript' src='~/FactoryTemplate/baumeister.qodeinteractive.com/wp-content/themes/baumeister/assets/js/modules/plugins/owl.carousel.min5b21.js?ver=6.0.2' id='owl-carousel-js'></script>
-<script type='text/javascript' src='~/FactoryTemplate/baumeister.qodeinteractive.com/wp-content/themes/baumeister/assets/js/modules/plugins/jquery.waypoints.min5b21.js?ver=6.0.2' id='waypoints-js'></script>
-<script type='text/javascript' src='~/FactoryTemplate/baumeister.qodeinteractive.com/wp-content/themes/baumeister/assets/js/modules/plugins/Chart.min5b21.js?ver=6.0.2' id='chart-js'></script>
-<script type='text/javascript' src='~/FactoryTemplate/baumeister.qodeinteractive.com/wp-content/themes/baumeister/assets/js/modules/plugins/fluidvids.min5b21.js?ver=6.0.2' id='fluidvids-js'></script>
-<script type='text/javascript' src='~/FactoryTemplate/baumeister.qodeinteractive.com/wp-content/plugins/js_composer/assets/lib/prettyphoto/js/jquery.prettyPhoto.mine1b2.js?ver=6.9.0' id='prettyphoto-js'></script>
-<script type='text/javascript' src='~/FactoryTemplate/baumeister.qodeinteractive.com/wp-content/themes/baumeister/assets/js/modules/plugins/perfect-scrollbar.jquery.min5b21.js?ver=6.0.2' id='perfect-scrollbar-js'></script>
-<script type='text/javascript' src='~/FactoryTemplate/baumeister.qodeinteractive.com/wp-content/themes/baumeister/assets/js/modules/plugins/ScrollToPlugin.min5b21.js?ver=6.0.2' id='ScrollToPlugin-js'></script>
-<script type='text/javascript' src='~/FactoryTemplate/baumeister.qodeinteractive.com/wp-content/themes/baumeister/assets/js/modules/plugins/parallax.min5b21.js?ver=6.0.2' id='parallax-js'></script>
-<script type='text/javascript' src='~/FactoryTemplate/baumeister.qodeinteractive.com/wp-content/themes/baumeister/assets/js/modules/plugins/jquery.waitforimages5b21.js?ver=6.0.2' id='waitforimages-js'></script>
-<script type='text/javascript' src='~/FactoryTemplate/baumeister.qodeinteractive.com/wp-content/themes/baumeister/assets/js/modules/plugins/jquery.easing.1.35b21.js?ver=6.0.2' id='jquery-easing-1.3-js'></script>
-<script type='text/javascript' src='~/FactoryTemplate/baumeister.qodeinteractive.com/wp-content/plugins/js_composer/assets/lib/bower/isotope/dist/isotope.pkgd.mine1b2.js?ver=6.9.0' id='isotope-js'></script>
-<script type='text/javascript' src='~/FactoryTemplate/baumeister.qodeinteractive.com/wp-content/themes/baumeister/assets/js/modules/plugins/packery-mode.pkgd.min5b21.js?ver=6.0.2' id='packery-js'></script>
-<script type='text/javascript' src='~/FactoryTemplate/baumeister.qodeinteractive.com/wp-content/plugins/mkd-core/shortcodes/countdown/assets/js/plugins/jquery.countdown.min5b21.js?ver=6.0.2' id='countdown-js'></script>
-<script type='text/javascript' src='~/FactoryTemplate/baumeister.qodeinteractive.com/wp-content/plugins/mkd-core/shortcodes/counter/assets/js/plugins/counter5b21.js?ver=6.0.2' id='counter-js'></script>
-<script type='text/javascript' src='~/FactoryTemplate/baumeister.qodeinteractive.com/wp-content/plugins/mkd-core/shortcodes/counter/assets/js/plugins/absoluteCounter.min5b21.js?ver=6.0.2' id='absoluteCounter-js'></script>
-<script type='text/javascript' src='~/FactoryTemplate/baumeister.qodeinteractive.com/wp-content/plugins/mkd-core/shortcodes/custom-font/assets/js/plugins/typed5b21.js?ver=6.0.2' id='typed-js'></script>
-<script type='text/javascript' src='~/FactoryTemplate/baumeister.qodeinteractive.com/wp-content/plugins/mkd-core/shortcodes/full-screen-sections/assets/js/plugins/jquery.fullPage.min5b21.js?ver=6.0.2' id='fullPage-js'></script>
-<script type='text/javascript' src='~/FactoryTemplate/baumeister.qodeinteractive.com/wp-content/plugins/mkd-core/shortcodes/pie-chart/assets/js/plugins/easypiechart5b21.js?ver=6.0.2' id='easypiechart-js'></script>
-<script type='text/javascript' src='~/FactoryTemplate/baumeister.qodeinteractive.com/wp-content/plugins/woocommerce/assets/js/select2/select2.full.min1385.js?ver=4.0.3-wc.6.8.0' id='select2-js'></script>
-<script type='text/javascript' src='http://maps.googleapis.com/maps/api/js?key=AIzaSyBQTukooUgzxI6RBwRGdF2OPbHJ8BEowC8&amp;ver=6.0.2' id='baumeister-mikado-google-map-api-js'></script>
-<script type='text/javascript' id='baumeister-mikado-modules-js-extra'>
-                /* <![CDATA[ */
-                    var mkdGlobalVars = {"vars": {"mkdAddForAdminBar": 0, "mkdElementAppearAmount": -100, "mkdAjaxUrl": "https:\/\/baumeister.qodeinteractive.com\/wp-admin\/admin-ajax.php", "mkdStickyHeaderHeight": 70, "mkdStickyHeaderTransparencyHeight": 70, "mkdTopBarHeight": 60, "mkdLogoAreaHeight": 0, "mkdMenuAreaHeight": 160, "mkdMobileHeaderHeight": 70 } };
-                    var mkdPerPageVars = {"vars": {"mkdStickyScrollAmount": 750, "mkdHeaderTransparencyHeight": 0, "mkdHeaderVerticalWidth": 0 } };
-                    /* ]]> */
-</script>
-<script type='text/javascript' src='~/FactoryTemplate/baumeister.qodeinteractive.com/wp-content/themes/baumeister/assets/js/modules.min5b21.js?ver=6.0.2' id='baumeister-mikado-modules-js'></script>
-<script type='text/javascript' src='~/FactoryTemplate/baumeister.qodeinteractive.com/wp-includes/js/comment-reply.min5b21.js?ver=6.0.2' id='comment-reply-js'></script>
-
-<script>
-    let slideIndex = 0;
-    showSlides();
-
-    function showSlides() {
-        let i;
-    let slides = document.getElementsByClassName("mySlides");
-    let dots = document.getElementsByClassName("dot");
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-}
-    slideIndex++;
-if (slideIndex > slides.length) {slideIndex = 1}
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-}
-    slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 2000); // Change image every 2 seconds
-}
+    if (window.RS_MODULES.checkMinimal !== undefined) { window.RS_MODULES.checkMinimal(); };
 </script>

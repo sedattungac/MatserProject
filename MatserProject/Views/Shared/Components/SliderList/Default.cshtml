@@ -1,1 +1,7 @@
-﻿<img style="width:100%;" src="https://baumeister.qodeinteractive.com/wp-content/uploads/2017/11/h9-parallax-1.jpg" />
+﻿@using EntityLayer.Concrete
+@model List<Slider>
+@foreach (var item in Model)
+{
+    <img style="width:100%;" src="@item.ImageUrl" />
+
+}

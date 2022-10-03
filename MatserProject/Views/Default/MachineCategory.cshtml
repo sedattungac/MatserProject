@@ -1,0 +1,79 @@
+﻿@using EntityLayer.Concrete
+@model List<Machine>
+@{
+    ViewData["Title"] = "MachineCategory";
+    Layout = "~/Views/Shared/_TemplateLayout.cshtml";
+}
+
+<div class="mkd-content" style="margin-top: -80px">
+    <div class="mkd-content-inner">
+        <div class="mkd-title-holder mkd-standard-with-breadcrumbs-type mkd-preload-background mkd-has-bg-image mkd-bg-parallax" style="height: 595px; background-image: url(/FactoryTemplate/baumeister.qodeinteractive.com/wp-content/uploads/2017/11/blog-post-title-img.jpg);" data-height="515">
+            <div class="mkd-title-image">
+                <img itemprop="image" src="/FactoryTemplate/baumeister.qodeinteractive.com/wp-content/uploads/2017/11/blog-post-title-img.jpg" alt="b" />
+            </div>
+            <div class="mkd-title-wrapper" style="height: 515px;padding-top: 80px">
+                <div class="mkd-title-inner">
+                    <div class="mkd-grid">
+                        <div class="mkd-title-info">
+                            <h1 class="mkd-page-title entry-title">@ViewBag.machineCategory</h1>
+                        </div>
+                        <div class="mkd-breadcrumbs-info">
+                            <div itemprop="breadcrumb" class="mkd-breadcrumbs "><a itemprop="url" href="/Default/Index">Anasayfa</a><span class="mkd-delimiter">&nbsp; / &nbsp;</span><a itemprop="url" href="#">Makine</a><span class="mkd-delimiter">&nbsp; / &nbsp;</span><span class="mkd-current">@ViewBag.machineCategory</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mkd-full-width">
+            <div class="mkd-full-width-inner">
+                <div class="mkd-grid-row">
+                    <div class="mkd-page-content-holder mkd-grid-col-12">
+                        <div class="mkd-row-grid-section-wrapper ">
+                            <div class="mkd-row-grid-section">
+                                <div class="vc_row wpb_row vc_row-fluid vc_custom_1512129764783">
+                                    <div class="wpb_column vc_column_container vc_col-sm-12">
+                                        <div class="vc_column-inner">
+                                            <div class="wpb_wrapper">
+                                                <div class="mkd-portfolio-list-holder mkd-pl-gallery mkd-normal-space mkd-pl-three-columns  mkd-pl-gallery-overlay    mkd-pl-pag-no-pagination     " data-type=gallery data-number-of-columns=3 data-space-between-items=normal data-number-of-items=12 data-image-proportions=full data-enable-fixed-proportions=no data-enable-image-shadow=no data-category=construction data-orderby=date data-order=ASC data-item-style=gallery-overlay data-enable-title=yes data-title-tag=h4 data-enable-category=yes data-enable-count-images=no data-enable-excerpt=no data-excerpt-length=20 data-pagination-type=no-pagination data-filter=no data-filter-order-by=name data-enable-article-animation=no data-portfolio-slider-on=no data-enable-loop=yes data-enable-autoplay=yes data-slider-speed=5000 data-slider-speed-animation=600 data-enable-navigation=yes data-enable-pagination=yes data-max-num-pages=2 data-next-page=2>
+                                                    <div class="mkd-pl-inner mkd-outer-space  clearfix mt-5">
+                                                        @foreach (var item in Model)
+                                                        {
+                                                            <article class="mkd-pl-item mkd-item-space  post-1283 portfolio-item type-portfolio-item status-publish has-post-thumbnail hentry portfolio-category-construction portfolio-category-technology portfolio-tag-technology portfolio-tag-wood">
+                                                                <div class="mkd-pl-item-inner">
+                                                                    <div class="mkd-pli-image">
+                                                                        <img width="1100" height="1100" src="@item.ImageUrl" class="attachment-full size-full wp-post-image" alt="a" sizes="(max-width: 1100px) 100vw, 1100px" />
+                                                                    </div>
+                                                                    <div class="mkd-pli-text-holder">
+                                                                        <div class="mkd-pli-text-wrapper">
+                                                                            <div class="mkd-pli-text">
+                                                                                <h4 itemprop="name" class="mkd-pli-title entry-title">
+                                                                                    @item.Producer - @item.Name
+                                                                                </h4>
+                                                                                <div class="mkd-pli-category-holder">
+                                                                                    <a itemprop="url" class="mkd-pli-category" href="/Default/Machine/@item.MachineId">@item.Group</a>
+                                                                                    <a itemprop="url" class="mkd-pli-category" href="/Default/Machine/@item.MachineId">@item.Dimension</a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <a itemprop="url" class="mkd-pli-link mkd-block-drag-link" href="/Default/Machine/@item.MachineId" target="_self"></a>
+                                                                </div>
+                                                            </article>
+                                                        }
+
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

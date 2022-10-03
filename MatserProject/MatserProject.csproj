@@ -12,6 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="MailKit" Version="3.4.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.12" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.12">
       <PrivateAssets>all</PrivateAssets>
@@ -33,6 +34,8 @@
 
   <ItemGroup>
     <Folder Include="wwwroot\Images\Blog\" />
+    <Folder Include="wwwroot\Images\Machine\" />
+    <Folder Include="wwwroot\Images\Slider\" />
     <Folder Include="wwwroot\Images\Personal\" />
     <Folder Include="wwwroot\Images\Product\" />
   </ItemGroup>

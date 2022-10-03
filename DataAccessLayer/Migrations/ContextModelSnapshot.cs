@@ -186,6 +186,98 @@ namespace DataAccessLayer.Migrations
                     b.ToTable("Faqs");
                 });
 
+            modelBuilder.Entity("EntityLayer.Concrete.Machine", b =>
+                {
+                    b.Property<int>("MachineId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("DeliveryDate")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Dimension")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Group")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ImageUrl")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ImageUrl2")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ImageUrl3")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ImageUrl4")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Information")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("MachineCategoryId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ModelYear")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Producer")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("VideoUrl")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("MachineId");
+
+                    b.HasIndex("MachineCategoryId");
+
+                    b.ToTable("Machines");
+                });
+
+            modelBuilder.Entity("EntityLayer.Concrete.MachineCategory", b =>
+                {
+                    b.Property<int>("MachineCategoryId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("ImageUrl")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Title")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("MachineCategoryId");
+
+                    b.ToTable("MachineCategories");
+                });
+
+            modelBuilder.Entity("EntityLayer.Concrete.Newsletter", b =>
+                {
+                    b.Property<int>("NewsletterId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Email")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("Status")
+                        .HasColumnType("bit");
+
+                    b.HasKey("NewsletterId");
+
+                    b.ToTable("Newsletters");
+                });
+
             modelBuilder.Entity("EntityLayer.Concrete.Personal", b =>
                 {
                     b.Property<int>("PersonalId")
@@ -280,6 +372,21 @@ namespace DataAccessLayer.Migrations
                     b.ToTable("Services");
                 });
 
+            modelBuilder.Entity("EntityLayer.Concrete.Slider", b =>
+                {
+                    b.Property<int>("SliderId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("ImageUrl")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("SliderId");
+
+                    b.ToTable("Sliders");
+                });
+
             modelBuilder.Entity("EntityLayer.Concrete.Blog", b =>
                 {
                     b.HasOne("EntityLayer.Concrete.BlogCategory", "BlogCategory")
@@ -289,6 +396,17 @@ namespace DataAccessLayer.Migrations
                         .IsRequired();
 
                     b.Navigation("BlogCategory");
+                });
+
+            modelBuilder.Entity("EntityLayer.Concrete.Machine", b =>
+                {
+                    b.HasOne("EntityLayer.Concrete.MachineCategory", "MachineCategory")
+                        .WithMany("Machines")
+                        .HasForeignKey("MachineCategoryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("MachineCategory");
                 });
 
             modelBuilder.Entity("EntityLayer.Concrete.Personal", b =>
@@ -321,6 +439,11 @@ namespace DataAccessLayer.Migrations
             modelBuilder.Entity("EntityLayer.Concrete.Department", b =>
                 {
                     b.Navigation("Personals");
+                });
+
+            modelBuilder.Entity("EntityLayer.Concrete.MachineCategory", b =>
+                {
+                    b.Navigation("Machines");
                 });
 
             modelBuilder.Entity("EntityLayer.Concrete.ProductCategory", b =>

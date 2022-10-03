@@ -1,0 +1,56 @@
+﻿@model IEnumerable<EntityLayer.Concrete.Newsletter>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    int order = 1;
+}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<br />
+<div class="card">
+    <div class="card-header">
+        <h3 class="card-title">E-Bülten Kayıt Listesi</h3>
+        <a class="float-right btn btn-outline-warning" href="/Newsletter/Add">Bülten Ekle</a>
+    </div>
+    <!-- /.card-header -->
+    <div class="card-body">
+        <table id="example2" class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Email</th>
+                    <th>Durum</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@order</td>
+                        <td>@item.Email</td>
+                        @if (item.Status == true)
+                        {
+                            <td><a class="btn btn-success" href="/Newsletter/Convert/@item.NewsletterId"><i class="fas fa-rotate-right"></i> Aktif</a></td>
+
+                        }
+                        else
+                        {
+                            <td><a class="btn btn-danger" href="/Newsletter/Convert/@item.NewsletterId"><i class="fas fa-rotate-left"></i> Pasif</a></td>
+
+                        }
+                    </tr>
+                    order++;
+                }
+
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>#</th>
+                    <th>Email</th>
+                    <th>Durum</th>
+
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <!-- /.card-body -->
+</div>

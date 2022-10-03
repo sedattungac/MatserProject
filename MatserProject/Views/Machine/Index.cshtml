@@ -1,0 +1,56 @@
+﻿@model IEnumerable<EntityLayer.Concrete.Machine>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    int order = 1;
+}
+
+<br />
+<div class="card">
+    <div class="card-header">
+        <h3 class="card-title">Makine  Listesi</h3>
+        <a class="float-right btn btn-outline-warning" href="/Machine/Add">Makine Ekle</a>
+    </div>
+    <!-- /.card-header -->
+    <div class="card-body">
+        <table id="example2" class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Makine Adı</th>
+                    <th>Üretim Yılı</th>
+                    <th>Ebat</th>
+                    <th>Resim</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                <tr>
+                    <td>@order</td>
+                    <td>@item.Name</td>
+                    <td>@item.ModelYear</td>
+                    <td>@item.Dimension</td>
+                    <td><img width="200" src="@item.ImageUrl" /></td>
+                    <td><a href="/Machine/Delete/@item.MachineId" class="btn btn-outline-danger">Sil</a></td>
+                    <td><a href="/Machine/Edit/@item.MachineId" class="btn btn-outline-success">Düzenle</a></td>
+                </tr>
+                    order++;
+                }
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>#</th>
+                    <th>Makine Adı</th>
+                    <th>Üretim Yılı</th>
+                    <th>Ebat</th>
+                    <th>Resim</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</div>
