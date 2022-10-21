@@ -34,10 +34,7 @@
 
   <ItemGroup>
     <Folder Include="wwwroot\Images\Blog\" />
-    <Folder Include="wwwroot\Images\Machine\" />
-    <Folder Include="wwwroot\Images\Slider\" />
-    <Folder Include="wwwroot\Images\Personal\" />
-    <Folder Include="wwwroot\Images\Product\" />
+    <Folder Include="wwwroot\Images\Background\" />
   </ItemGroup>
 
 </Project>

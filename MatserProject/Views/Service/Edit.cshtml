@@ -8,7 +8,7 @@
 <hr />
 <div class="row">
     <div class="col-md-12">
-        <form asp-action="Edit">
+        <form asp-action="Edit" asp-controller="Service" method="post" enctype="multipart/form-data">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="ServiceId" />
             <div class="form-group">
@@ -20,6 +20,11 @@
                 <label asp-for="Description" class="control-label">Açıklama</label>
                 <input asp-for="Description" class="form-control" />
                 <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ImageUrl" class="control-label">Resim</label>
+                <input type="file" asp-for="ImageUrl" class="form-control" />
+                <span asp-validation-for="ImageUrl" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Icon" class="control-label">İkon</label>

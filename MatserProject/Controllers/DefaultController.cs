@@ -159,7 +159,13 @@ namespace MatserProject.Controllers
             var value = serviceManager.TGetList();
             return View(value);
         }
-
+        public IActionResult ServiceDetail(int id)
+        {
+            Context c = new Context();
+            var value = c.Services.Where(x => x.ServiceId == id).ToList();
+            ViewBag.serviceTitle = c.Services.Where(x => x.ServiceId == id).Select(x => x.Title).FirstOrDefault();
+            return View(value);
+        }
         public IActionResult StockList()
         {
             MachineListData machineList = new MachineListData

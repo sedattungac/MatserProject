@@ -165,6 +165,30 @@ namespace DataAccessLayer.Migrations
                     b.ToTable("Departments");
                 });
 
+            modelBuilder.Entity("EntityLayer.Concrete.Email", b =>
+                {
+                    b.Property<int>("EmailId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("EmailAddress")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Message")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Subjeft")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("EmailId");
+
+                    b.ToTable("Emails");
+                });
+
             modelBuilder.Entity("EntityLayer.Concrete.Faq", b =>
                 {
                     b.Property<int>("FaqId")
@@ -362,6 +386,9 @@ namespace DataAccessLayer.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Icon")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ImageUrl")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Title")
