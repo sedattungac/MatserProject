@@ -33,6 +33,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="wwwroot\FactoryTemplate\baumeister.qodeinteractive.com\wp-content\plugins\mkd-core\shortcodes\full-screen-sections\assets\js\plugins\" />
+    <Folder Include="wwwroot\FactoryTemplate\baumeister.qodeinteractive.com\wp-content\themes\baumeister\assets\css\linea-icons\basic-elaboration\fonts\" />
     <Folder Include="wwwroot\Images\Blog\" />
     <Folder Include="wwwroot\Images\Background\" />
   </ItemGroup>
