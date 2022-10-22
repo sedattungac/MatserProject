@@ -162,8 +162,11 @@ namespace MatserProject.Controllers
         public IActionResult ServiceDetail(int id)
         {
             Context c = new Context();
-            var value = c.Services.Where(x => x.ServiceId == id).ToList();
+            var value = c.ServiceDetails.Include(x => x.Service).Where(x => x.ServiceId == id).ToList();
             ViewBag.serviceTitle = c.Services.Where(x => x.ServiceId == id).Select(x => x.Title).FirstOrDefault();
+            ViewBag.serviceImage = c.Services.Where(x => x.ServiceId == id).Select(x => x.ImageUrl).FirstOrDefault();
+            ViewBag.serviceDesc = c.Services.Where(x => x.ServiceId == id).Select(x => x.Description).FirstOrDefault();
+            ViewBag.serviceDesc2 = c.Services.Where(x => x.ServiceId == id).Select(x => x.Description2).FirstOrDefault();
             return View(value);
         }
         public IActionResult StockList()

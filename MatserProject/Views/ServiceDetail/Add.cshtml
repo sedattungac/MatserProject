@@ -1,0 +1,39 @@
+﻿@model EntityLayer.Concrete.ServiceDetail
+
+@{
+    ViewData["Title"] = "Add";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h4>Servis Detay(Makine) Ekleme Sayfası</h4>
+<hr />
+<div class="row">
+    <div class="col-md-12">
+        <form asp-action="Add">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="MachineName" class="control-label">Makine Adı</label>
+                <input asp-for="MachineName" class="form-control" />
+                <span asp-validation-for="MachineName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PdfUrl" class="control-label">Pdf</label>
+                <input asp-for="PdfUrl" class="form-control" />
+                <span asp-validation-for="PdfUrl" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ServiceId" class="control-label">Servis Seçiniz</label>
+                <select asp-for="ServiceId" class="form-control" asp-items="ViewBag.category"></select>
+            </div>
+            <div class="form-group">
+                <div class="float-left">
+                    <a class="btn btn-outline-secondary" asp-action="Index">Geri Dön</a>
+                </div>
+                <div class="float-right">
+                    <input type="submit" value="Kaydet" class="btn btn-outline-primary" />
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+

@@ -31,6 +31,7 @@ namespace DataAccessLayer.Concrete
         public DbSet<Newsletter> Newsletters { get; set; }
         public DbSet<Slider> Sliders { get; set; }
         public DbSet<Email> Emails { get; set; }
+        public DbSet<ServiceDetail> ServiceDetails { get; set; }
 
 
     }
